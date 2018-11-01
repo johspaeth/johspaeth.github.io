@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>pushdown systems on Johannes Späth</title>
+    <link>/tags/pushdown-systems/</link>
+    <description>Recent content in pushdown systems on Johannes Späth</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018</copyright>
+    <lastBuildDate>Sun, 28 Oct 2018 00:00:00 +0200</lastBuildDate>
+    
+	<atom:link href="/tags/pushdown-systems/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Synchronized Pushdown Systems</title>
+      <link>/project/spds/</link>
+      <pubDate>Sun, 28 Oct 2018 00:00:00 +0200</pubDate>
+      
+      <guid>/project/spds/</guid>
+      <description>Synchronized Pushdown Systems (SPDS) are a recently development for efficient and precise data-flow analysis. SPDS relies on two pushdown systems, one system models field-sensitivity, the other one context-sensitivity. The results of both systems are then synchronized and yield a field- and context-sensitive data-flow analysis.
+The implementation of SPDS is found here:
+https://github.com/CROSSINGTUD/WPDS</description>
+    </item>
+    
+  </channel>
+</rss>

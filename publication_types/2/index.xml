@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2 on Johannes Späth</title>
+    <link>/publication_types/2/</link>
+    <description>Recent content in 2 on Johannes Späth</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018</copyright>
+    <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0100</lastBuildDate>
+    
+	<atom:link href="/publication_types/2/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>IDEal: Efficient and Precise Alias-Aware Data-Flow Analysis</title>
+      <link>/publication/oopsla2017_ideal/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0100</pubDate>
+      
+      <guid>/publication/oopsla2017_ideal/</guid>
+      <description>The recording of the talk at the conference is found here: https://www.youtube.com/watch?v=0gGlXgnoX18</description>
+    </item>
+    
+  </channel>
+</rss>

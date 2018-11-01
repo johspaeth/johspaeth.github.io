@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>1 on Johannes Späth</title>
+    <link>/publication_types/1/</link>
+    <description>Recent content in 1 on Johannes Späth</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018</copyright>
+    <lastBuildDate>Mon, 01 Jan 2018 00:00:00 +0100</lastBuildDate>
+    
+	<atom:link href="/publication_types/1/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Context-, Flow- and Field-Sensitive Data-Flow Analysis using Synchronized Pushdown Systems</title>
+      <link>/publication/popl2019_spds/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0100</pubDate>
+      
+      <guid>/publication/popl2019_spds/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CrySL: An Extensible Approach to Validating the Correct Usage of CryptographicAPIs</title>
+      <link>/publication/ecoop2018_crysl/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0100</pubDate>
+      
+      <guid>/publication/ecoop2018_crysl/</guid>
+      <description>The recording of my talk at the conference is found here: https://www.youtube.com/watch?v=aTt4M2_TGPI</description>
+    </item>
+    
+    <item>
+      <title>Boomerang: Demand-Driven Flow- and Context-Sensitive Pointer Analysisfor Java</title>
+      <link>/publication/ecoop2016_boomerang/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0100</pubDate>
+      
+      <guid>/publication/ecoop2016_boomerang/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Access-Path Abstraction: Scaling Field-Sensitive Data-Flow Analysiswith Unbounded Access Paths</title>
+      <link>/publication/ase2015_ifdsapa/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0100</pubDate>
+      
+      <guid>/publication/ase2015_ifdsapa/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

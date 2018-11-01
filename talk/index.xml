@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Talks on Johannes Späth</title>
+    <link>/talk/</link>
+    <description>Recent content in Talks on Johannes Späth</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018</copyright>
+    <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0100</lastBuildDate>
+    
+	<atom:link href="/talk/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Boomerang: Demand-Driven Flow- and Context-Sensitive Pointer Analysisfor Java</title>
+      <link>/talk/ecoop-2016/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0100</pubDate>
+      
+      <guid>/talk/ecoop-2016/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Context-, Flow- and Field-Sensitive Data-Flow Analysis using Synchronized Pushdown Systems</title>
+      <link>/talk/popl-spds/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0100</pubDate>
+      
+      <guid>/talk/popl-spds/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>IDEal: Efficient and Precise Alias-aware Data-Flow Analysis</title>
+      <link>/talk/oopsla-2017/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0100</pubDate>
+      
+      <guid>/talk/oopsla-2017/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>You forgot to changeit - CogniCrypt knows it!</title>
+      <link>/talk/eclipsecon-2018/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0100</pubDate>
+      
+      <guid>/talk/eclipsecon-2018/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

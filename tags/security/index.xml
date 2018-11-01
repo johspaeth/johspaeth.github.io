@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>security on Johannes Späth</title>
+    <link>/tags/security/</link>
+    <description>Recent content in security on Johannes Späth</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018</copyright>
+    <lastBuildDate>Sun, 23 Sep 2018 00:00:00 +0200</lastBuildDate>
+    
+	<atom:link href="/tags/security/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Data-Flow Framework IDEal</title>
+      <link>/project/ideal/</link>
+      <pubDate>Sun, 23 Sep 2018 00:00:00 +0200</pubDate>
+      
+      <guid>/project/ideal/</guid>
+      <description>$IDE^{al}$ is a generic and efficient data-flow framework for Java. $IDE^{al}$ can be instantiated for various data-flow problems, e.g., typestate analysis for the detection of misuses of application programming interfaces (API), linear constant propagation or mining of API uses. For more details see our OOPSLA2017 publication.
+We recently re-designed and re-implemented based on Synchronized Pushdown Systems (SPDS). SPDS are an efficient replace for $k$-limited access paths or access graphs. $IDE^{al}$ originally relied on access graphs.</description>
+    </item>
+    
+    <item>
+      <title>CogniCrypt</title>
+      <link>/project/cognicrypt/</link>
+      <pubDate>Thu, 10 May 2018 00:00:00 +0200</pubDate>
+      
+      <guid>/project/cognicrypt/</guid>
+      <description>CogniCrypt is an Eclipse Plugin that supports software developers to use cryptographic libraries securely. CogniCrypt ships in two main feature: A code generation and a static code analysis continously checking modification in the code.
+Visited the project website for more details on CogniCrypt
+https://www.cognicrypt.de
+Johannes Späth is involved in the static code analysis part of CogniCrypt. The static code analysis is configured by rules written in a domain-sepcific languauge, called CrySL.</description>
+    </item>
+    
+  </channel>
+</rss>

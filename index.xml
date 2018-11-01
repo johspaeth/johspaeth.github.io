@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Johannes Späth on Johannes Späth</title>
+    <link>/</link>
+    <description>Recent content in Johannes Späth on Johannes Späth</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018</copyright>
+    <lastBuildDate>Sun, 15 Oct 2017 00:00:00 +0200</lastBuildDate>
+    <atom:link href="/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Synchronized Pushdown Systems</title>
+      <link>/project/spds/</link>
+      <pubDate>Sun, 28 Oct 2018 00:00:00 +0200</pubDate>
+      
+      <guid>/project/spds/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;../../publication/popl2019_spds/&#34;&gt;Synchronized Pushdown Systems (SPDS)&lt;/a&gt; are a recently development for efficient and precise data-flow analysis.
+SPDS relies on two pushdown systems, one system models field-sensitivity, the other one context-sensitivity. The results of both systems are then synchronized and yield a field- and context-sensitive data-flow analysis.&lt;/p&gt;
+
+&lt;p&gt;The implementation of SPDS is found here:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/CROSSINGTUD/WPDS&#34; target=&#34;_blank&#34;&gt;https://github.com/CROSSINGTUD/WPDS&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Data-Flow Framework IDEal</title>
+      <link>/project/ideal/</link>
+      <pubDate>Sun, 23 Sep 2018 00:00:00 +0200</pubDate>
+      
+      <guid>/project/ideal/</guid>
+      <description>&lt;p&gt;$IDE^{al}$ is a generic and efficient data-flow framework for Java. $IDE^{al}$ can be instantiated for various data-flow problems, e.g., typestate analysis for the detection of misuses of application programming interfaces (API), linear constant propagation or mining of API uses. For more details see our &lt;a href=&#34;../../publication/oopsla2017_ideal/&#34;&gt;OOPSLA2017 publication&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;We recently re-designed and re-implemented based on &lt;a href=&#34;../../publication/popl2019_spds/&#34;&gt;Synchronized Pushdown Systems (SPDS)&lt;/a&gt;.  SPDS are an efficient replace for $k$-limited access paths or access graphs. $IDE^{al}$ originally relied on access graphs.&lt;/p&gt;
+
+&lt;p&gt;The implementation based on SPDS is found here.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/CROSSINGTUD/WPDS&#34; target=&#34;_blank&#34;&gt;https://github.com/CROSSINGTUD/WPDS&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The old implementation is found here.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/secure-software-engineering/ideal&#34; target=&#34;_blank&#34;&gt;https://github.com/secure-software-engineering/ideal&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>CogniCrypt</title>
+      <link>/project/cognicrypt/</link>
+      <pubDate>Thu, 10 May 2018 00:00:00 +0200</pubDate>
+      
+      <guid>/project/cognicrypt/</guid>
+      <description>&lt;p&gt;CogniCrypt is an Eclipse Plugin that supports software developers to use cryptographic libraries securely.
+CogniCrypt ships in two main feature: A code generation and a static code analysis continously checking modification in the code.&lt;/p&gt;
+
+&lt;p&gt;Visited the project website for more details on CogniCrypt&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.cognicrypt.de&#34; target=&#34;_blank&#34;&gt;https://www.cognicrypt.de&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Johannes Späth is involved in the static code analysis part of CogniCrypt. The static code analysis is configured by rules written in a domain-sepcific languauge, called CrySL. The CrySL rules are automatically compiled into a static code analysis that relies on &lt;a href=&#34;../../project/boomerang/&#34;&gt;Boomerang&lt;/a&gt; and &lt;a href=&#34;../../project/ideal/&#34;&gt;$IDE^{al}$&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The static analysis of CogniCrypt is developed independently of Eclipse and can be executed on any Java byte code and Android APK files.&lt;/p&gt;
+
+&lt;p&gt;Visit our github Repositories for more details&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/CROSSINGTUD/CryptoAnalysis&#34; target=&#34;_blank&#34;&gt;https://github.com/CROSSINGTUD/CryptoAnalysis&lt;/a&gt;
+&lt;a href=&#34;https://github.com/CROSSINGTUD/CryptoAnalysis-Android&#34; target=&#34;_blank&#34;&gt;https://github.com/CROSSINGTUD/CryptoAnalysis-Android&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Context-, Flow- and Field-Sensitive Data-Flow Analysis using Synchronized Pushdown Systems</title>
+      <link>/publication/popl2019_spds/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0100</pubDate>
+      
+      <guid>/publication/popl2019_spds/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CrySL: An Extensible Approach to Validating the Correct Usage of CryptographicAPIs</title>
+      <link>/publication/ecoop2018_crysl/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0100</pubDate>
+      
+      <guid>/publication/ecoop2018_crysl/</guid>
+      <description>&lt;p&gt;The recording of my talk at the conference is found here:
+&lt;a href=&#34;https://www.youtube.com/watch?v=aTt4M2_TGPI&#34; target=&#34;_blank&#34;&gt;https://www.youtube.com/watch?v=aTt4M2_TGPI&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Boomerang: Demand-Driven Flow- and Context-Sensitive Pointer Analysisfor Java</title>
+      <link>/talk/ecoop-2016/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0100</pubDate>
+      
+      <guid>/talk/ecoop-2016/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Context-, Flow- and Field-Sensitive Data-Flow Analysis using Synchronized Pushdown Systems</title>
+      <link>/talk/popl-spds/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0100</pubDate>
+      
+      <guid>/talk/popl-spds/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>IDEal: Efficient and Precise Alias-Aware Data-Flow Analysis</title>
+      <link>/publication/oopsla2017_ideal/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0100</pubDate>
+      
+      <guid>/publication/oopsla2017_ideal/</guid>
+      <description>&lt;p&gt;The recording of the talk at the conference is found here:
+&lt;a href=&#34;https://www.youtube.com/watch?v=0gGlXgnoX18&#34; target=&#34;_blank&#34;&gt;https://www.youtube.com/watch?v=0gGlXgnoX18&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>IDEal: Efficient and Precise Alias-aware Data-Flow Analysis</title>
+      <link>/talk/oopsla-2017/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0100</pubDate>
+      
+      <guid>/talk/oopsla-2017/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>You forgot to changeit - CogniCrypt knows it!</title>
+      <link>/talk/eclipsecon-2018/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0100</pubDate>
+      
+      <guid>/talk/eclipsecon-2018/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pointer Analysis Boomerang</title>
+      <link>/project/boomerang/</link>
+      <pubDate>Mon, 04 Jul 2016 00:00:00 +0200</pubDate>
+      
+      <guid>/project/boomerang/</guid>
+      <description>&lt;p&gt;Boomerang is an efficient and precise demand-driven pointer analysis for Java. It achieves efficiency by propagating pointer relations in a distributive manner. For more details see our &lt;a href=&#34;../../publication/ecoop2016_boomerang/&#34;&gt;ECOOP2016 publication&lt;/a&gt; on Boomerang.&lt;/p&gt;
+
+&lt;p&gt;We recently redesigned Boomerang based on &lt;a href=&#34;../../publication/popl2019_spds/&#34;&gt;Synchronized Pushdown Systems (SPDS)&lt;/a&gt;.  SPDS are an efficient replace for $k$-limited access paths or access graphs, the original heap model Boomerang relied on.&lt;/p&gt;
+
+&lt;p&gt;The  implementation based on SPDS is found here.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/CROSSINGTUD/WPDS&#34; target=&#34;_blank&#34;&gt;https://github.com/CROSSINGTUD/WPDS&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The old implementation is found here.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/secure-software-engineering/boomerang&#34; target=&#34;_blank&#34;&gt;https://github.com/secure-software-engineering/boomerang&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Boomerang: Demand-Driven Flow- and Context-Sensitive Pointer Analysisfor Java</title>
+      <link>/publication/ecoop2016_boomerang/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0100</pubDate>
+      
+      <guid>/publication/ecoop2016_boomerang/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Access-Path Abstraction: Scaling Field-Sensitive Data-Flow Analysiswith Unbounded Access Paths</title>
+      <link>/publication/ase2015_ifdsapa/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0100</pubDate>
+      
+      <guid>/publication/ase2015_ifdsapa/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

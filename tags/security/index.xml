@@ -29,7 +29,7 @@ We recently re-designed and re-implemented based on Synchronized Pushdown System
       
       <guid>/project/cognicrypt/</guid>
       <description>CogniCrypt is an Eclipse Plugin that supports software developers to use cryptographic libraries securely. CogniCrypt ships in two main feature: A code generation and a static code analysis continously checking modification in the code.
-Visited the project website for more details on CogniCrypt
+For more details, please visit the project website at
 https://www.cognicrypt.de
 Johannes Späth is involved in the static code analysis part of CogniCrypt. The static code analysis is configured by rules written in a domain-sepcific languauge, called CrySL.</description>
     </item>

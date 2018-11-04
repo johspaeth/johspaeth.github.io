@@ -39,7 +39,7 @@ SPDS relies on two pushdown systems, one system models field-sensitivity, the ot
 
 &lt;p&gt;&lt;a href=&#34;https://github.com/CROSSINGTUD/WPDS&#34; target=&#34;_blank&#34;&gt;https://github.com/CROSSINGTUD/WPDS&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;The old implementation is found here.&lt;/p&gt;
+&lt;p&gt;The implementation based on access graphs is found here:&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://github.com/secure-software-engineering/ideal&#34; target=&#34;_blank&#34;&gt;https://github.com/secure-software-engineering/ideal&lt;/a&gt;&lt;/p&gt;
 </description>
@@ -54,7 +54,7 @@ SPDS relies on two pushdown systems, one system models field-sensitivity, the ot
       <description>&lt;p&gt;CogniCrypt is an Eclipse Plugin that supports software developers to use cryptographic libraries securely.
 CogniCrypt ships in two main feature: A code generation and a static code analysis continously checking modification in the code.&lt;/p&gt;
 
-&lt;p&gt;Visited the project website for more details on CogniCrypt&lt;/p&gt;
+&lt;p&gt;For more details, please visit the project website at&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://www.cognicrypt.de&#34; target=&#34;_blank&#34;&gt;https://www.cognicrypt.de&lt;/a&gt;&lt;/p&gt;
 
@@ -62,7 +62,7 @@ CogniCrypt ships in two main feature: A code generation and a static code analys
 
 &lt;p&gt;The static analysis of CogniCrypt is developed independently of Eclipse and can be executed on any Java byte code and Android APK files.&lt;/p&gt;
 
-&lt;p&gt;Visit our github Repositories for more details&lt;/p&gt;
+&lt;p&gt;For more details, please visit the GitHub repositories&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://github.com/CROSSINGTUD/CryptoAnalysis&#34; target=&#34;_blank&#34;&gt;https://github.com/CROSSINGTUD/CryptoAnalysis&lt;/a&gt;
 &lt;a href=&#34;https://github.com/CROSSINGTUD/CryptoAnalysis-Android&#34; target=&#34;_blank&#34;&gt;https://github.com/CROSSINGTUD/CryptoAnalysis-Android&lt;/a&gt;&lt;/p&gt;

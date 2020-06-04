@@ -1,2 +1,2 @@
 Repository for my website at
-johspaeth.github.io
+[johspaeth.github.io](http://johspaeth.de)

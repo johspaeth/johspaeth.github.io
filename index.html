@@ -1,1854 +1,213 @@
-
-<!DOCTYPE html>
-<html lang="en-us">
-<head>
-
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="Source Themes Academic 3.0.0">
-  <meta name="generator" content="Hugo 0.49.2" />
-  <meta name="author" content="Johannes Späth">
-
-  
-  
-  
-  
-    
-  
-  <meta name="description" content="Researcher of Program Analysis">
-
-  
-  <link rel="alternate" hreflang="en-us" href="/">
-
-  
-
-
-  
-
-  
-
-  
-
-  
-  
-  
-  <meta name="theme-color" content="#2962ff">
-  
-
-  
-  
-  
-  
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha256-eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE=" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
-
-    
-    
-    
-      
-    
-    
-      
-      
-        
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" crossorigin="anonymous">
-        
-      
-    
-
-    
-
-    
-
-  
-
-  
-  
-  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:400,400italic,700|Roboto+Mono">
-  
-
-  <link rel="stylesheet" href="/styles.css">
-  
-
-  
-  
-  
-
-  
-  <link rel="alternate" href="/index.xml" type="application/rss+xml" title="Johannes Späth">
-  <link rel="feed" href="/index.xml" type="application/rss+xml" title="Johannes Späth">
-  
-
-  <link rel="manifest" href="/site.webmanifest">
-  <link rel="icon" type="image/png" href="/img/icon.png">
-  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
-
-  <link rel="canonical" href="/">
-
-  <meta property="twitter:card" content="summary_large_image">
-  
-  <meta property="og:site_name" content="Johannes Späth">
-  <meta property="og:url" content="/">
-  <meta property="og:title" content="Johannes Späth">
-  <meta property="og:description" content="Researcher of Program Analysis">
-  
-  
-    
-  <meta property="og:image" content="/img/icon-192.png">
-  <meta property="og:locale" content="en-us">
-  
-  <meta property="og:updated_time" content="2017-10-15T00:00:00&#43;02:00">
-  
-
-  
-
-<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css">
-<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
-<script>
-  window.addEventListener("load", function(){
-    window.cookieconsent.initialise({
-      "palette": {
-        "popup": {
-          "background": "#2962ff",
-          "text": "#fff"
-        },
-        "button": {
-          "background": "#fff",
-          "text": "#2962ff"
-        }
-      },
-      "theme": "classic",
-      "content": {
-        "message": "This website uses cookies to ensure you get the best experience on our website.",
-        "dismiss": "Got it!",
-        "link": "Learn more",
-        "href": "https://cookies.insites.com"
-      }
-    })});
-</script>
-
-
-  
-
-  <title>Johannes Späth</title>
-
-</head>
-<body id="top" data-spy="scroll" data-target="#navbar-main" data-offset="71" >
-
-<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0" id="navbar-main">
-  <div class="container">
-
-    
-      <a class="navbar-brand" href="/">Johannes Späth</a>
-      
-      <button type="button" class="navbar-toggler" data-toggle="collapse"
-              data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
-        <span><i class="fas fa-bars"></i></span>
-      </button>
-      
-
-    
-    <div class="collapse navbar-collapse" id="navbar">
-
-      
-      
-      <ul class="navbar-nav ml-auto">
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link" href="/#about" data-target="#about">
-            
-            <span>Home</span>
-            
-          </a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link" href="/#publications_selected" data-target="#publications_selected">
-            
-            <span>Publications</span>
-            
-          </a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link" href="/#talks" data-target="#talks">
-            
-            <span>Talks</span>
-            
-          </a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link" href="/#projects" data-target="#projects">
-            
-            <span>Projects</span>
-            
-          </a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link" href="/#contact" data-target="#contact">
-            
-            <span>Contact</span>
-            
-          </a>
-        </li>
-
-        
-        
-
-      
-
-        
-
-        
-      </ul>
-
-    </div>
-  </div>
-</nav>
-
-
-
-<span id="homepage" style="display: none"></span>
-
-
-  
-
-
-
-
-
-  
-  
-  
-  <section id="about" class="home-section">
-    <div class="container">
-      
-
-
-
-<div class="row" itemprop="author" itemscope itemtype="http://schema.org/Person" itemref="person-email">
-  <div class="col-12 col-lg-4">
-    <div id="profile">
-
-      
-      <img class="portrait" src="/img/me.jpg" itemprop="image" alt="Avatar">
-      
-
-      <div class="portrait-title">
-        <h2 itemprop="name">Johannes Späth</h2>
-        <h3 itemprop="jobTitle">Researcher of Program Analysis</h3>
-
-        
-        
-
-        
-        <h3 itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">
-          
-          <span itemprop="name">University Paderborn</span>
-          
-        </h3>
-        
-      </div>
-
-      <link itemprop="url" href="/">
-
-      <ul class="network-icon" aria-hidden="true">
-        
-        
-        
-        
-          
-        
-        
-          
-        
-        
-        <li>
-          <a itemprop="sameAs" href="/#contact" >
-            <i class="fas fa-envelope big-icon"></i>
-          </a>
-        </li>
-        
-        
-        
-        
-          
-        
-        
-          
-        <li>
-          <a itemprop="sameAs" href="https://twitter.com/johspaeth" target="_blank" rel="noopener">
-            <i class="fab fa-twitter big-icon"></i>
-          </a>
-        </li>
-        
-        
-        
-        
-        
-          
-        <li>
-          <a itemprop="sameAs" href="https://scholar.google.com/citations?user=wJ4_HPoAAAAJ&amp;hl=de" target="_blank" rel="noopener">
-            <i class="ai ai-google-scholar big-icon"></i>
-          </a>
-        </li>
-        
-        
-        
-        
-          
-        
-        
-          
-        <li>
-          <a itemprop="sameAs" href="https://github.com/johspaeth" target="_blank" rel="noopener">
-            <i class="fab fa-github big-icon"></i>
-          </a>
-        </li>
-        
-      </ul>
-
-    </div>
-  </div>
-  <div class="col-12 col-lg-8" itemprop="description">
-
+<!doctype html><html lang=en-us dir=ltr data-wc-theme-default=system data-hbb-relurl=/><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=generator content="Hugo Blox Kit 0.12.0"><meta name=author content="Johannes Späth"><meta name=description content="Computer scientist and engineer with 12 years of experience spanning academic research, startup founding, and technical leadership. Specializes in program analysis, formal verification, and software security."><link rel=alternate hreflang=en-us href=https://johspaeth.de/><style>:root{--hb-primary-500-rgb:181 137 0;--color-primary-500:rgb(var(--hb-primary-500-rgb));--hb-primary-50-rgb:251 249 242;--color-primary-50:rgb(var(--hb-primary-50-rgb));--hb-primary-100-rgb:247 243 229;--color-primary-100:rgb(var(--hb-primary-100-rgb));--hb-primary-200-rgb:240 231 204;--color-primary-200:rgb(var(--hb-primary-200-rgb));--hb-primary-300-rgb:232 219 178;--color-primary-300:rgb(var(--hb-primary-300-rgb));--hb-primary-400-rgb:225 207 153;--color-primary-400:rgb(var(--hb-primary-400-rgb));--hb-primary-600-rgb:162 123 0;--color-primary-600:rgb(var(--hb-primary-600-rgb));--hb-primary-700-rgb:144 109 0;--color-primary-700:rgb(var(--hb-primary-700-rgb));--hb-primary-800-rgb:117 89 0;--color-primary-800:rgb(var(--hb-primary-800-rgb));--hb-primary-900-rgb:90 68 0;--color-primary-900:rgb(var(--hb-primary-900-rgb));--hb-primary-950-rgb:54 41 0;--color-primary-950:rgb(var(--hb-primary-950-rgb));--hb-secondary-500-rgb:42 161 152;--color-secondary-500:rgb(var(--hb-secondary-500-rgb));--hb-secondary-50-rgb:244 250 249;--color-secondary-50:rgb(var(--hb-secondary-50-rgb));--hb-secondary-100-rgb:233 245 244;--color-secondary-100:rgb(var(--hb-secondary-100-rgb));--hb-secondary-200-rgb:212 236 234;--color-secondary-200:rgb(var(--hb-secondary-200-rgb));--hb-secondary-300-rgb:191 226 224;--color-secondary-300:rgb(var(--hb-secondary-300-rgb));--hb-secondary-400-rgb:169 217 213;--color-secondary-400:rgb(var(--hb-secondary-400-rgb));--hb-secondary-600-rgb:37 144 136;--color-secondary-600:rgb(var(--hb-secondary-600-rgb));--hb-secondary-700-rgb:33 128 121;--color-secondary-700:rgb(var(--hb-secondary-700-rgb));--hb-secondary-800-rgb:27 104 98;--color-secondary-800:rgb(var(--hb-secondary-800-rgb));--hb-secondary-900-rgb:21 80 76;--color-secondary-900:rgb(var(--hb-secondary-900-rgb));--hb-secondary-950-rgb:12 48 45;--color-secondary-950:rgb(var(--hb-secondary-950-rgb));--hb-gray-500-rgb:101 123 131;--color-gray-500:rgb(var(--hb-gray-500-rgb));--hb-gray-50-rgb:247 248 248;--color-gray-50:rgb(var(--hb-gray-50-rgb));--hb-gray-100-rgb:239 241 242;--color-gray-100:rgb(var(--hb-gray-100-rgb));--hb-gray-200-rgb:224 228 230;--color-gray-200:rgb(var(--hb-gray-200-rgb));--hb-gray-300-rgb:208 215 217;--color-gray-300:rgb(var(--hb-gray-300-rgb));--hb-gray-400-rgb:193 202 205;--color-gray-400:rgb(var(--hb-gray-400-rgb));--hb-gray-600-rgb:90 110 117;--color-gray-600:rgb(var(--hb-gray-600-rgb));--hb-gray-700-rgb:80 98 104;--color-gray-700:rgb(var(--hb-gray-700-rgb));--hb-gray-800-rgb:65 79 85;--color-gray-800:rgb(var(--hb-gray-800-rgb));--hb-gray-900-rgb:50 61 65;--color-gray-900:rgb(var(--hb-gray-900-rgb));--hb-gray-950-rgb:30 36 39;--color-gray-950:rgb(var(--hb-gray-950-rgb));--hb-color-background:#fdf6e3;--hb-color-foreground:#586e75;--hb-color-header-bg:#eee8d5;--hb-color-header-fg:#586e75;--hb-color-footer-bg:#eee8d5;--hb-color-footer-fg:#657b83}.dark{--hb-primary-500-rgb:38 139 210;--color-primary-500:rgb(var(--hb-primary-500-rgb));--hb-primary-50-rgb:244 249 252;--color-primary-50:rgb(var(--hb-primary-50-rgb));--hb-primary-100-rgb:233 243 250;--color-primary-100:rgb(var(--hb-primary-100-rgb));--hb-primary-200-rgb:211 231 246;--color-primary-200:rgb(var(--hb-primary-200-rgb));--hb-primary-300-rgb:189 220 241;--color-primary-300:rgb(var(--hb-primary-300-rgb));--hb-primary-400-rgb:168 208 237;--color-primary-400:rgb(var(--hb-primary-400-rgb));--hb-primary-600-rgb:34 125 189;--color-primary-600:rgb(var(--hb-primary-600-rgb));--hb-primary-700-rgb:30 111 168;--color-primary-700:rgb(var(--hb-primary-700-rgb));--hb-primary-800-rgb:24 90 136;--color-primary-800:rgb(var(--hb-primary-800-rgb));--hb-primary-900-rgb:19 69 105;--color-primary-900:rgb(var(--hb-primary-900-rgb));--hb-primary-950-rgb:11 41 63;--color-primary-950:rgb(var(--hb-primary-950-rgb));--hb-secondary-500-rgb:133 153 0;--color-secondary-500:rgb(var(--hb-secondary-500-rgb));--hb-secondary-50-rgb:248 249 242;--color-secondary-50:rgb(var(--hb-secondary-50-rgb));--hb-secondary-100-rgb:242 244 229;--color-secondary-100:rgb(var(--hb-secondary-100-rgb));--hb-secondary-200-rgb:230 234 204;--color-secondary-200:rgb(var(--hb-secondary-200-rgb));--hb-secondary-300-rgb:218 224 178;--color-secondary-300:rgb(var(--hb-secondary-300-rgb));--hb-secondary-400-rgb:206 214 153;--color-secondary-400:rgb(var(--hb-secondary-400-rgb));--hb-secondary-600-rgb:119 137 0;--color-secondary-600:rgb(var(--hb-secondary-600-rgb));--hb-secondary-700-rgb:106 122 0;--color-secondary-700:rgb(var(--hb-secondary-700-rgb));--hb-secondary-800-rgb:86 99 0;--color-secondary-800:rgb(var(--hb-secondary-800-rgb));--hb-secondary-900-rgb:66 76 0;--color-secondary-900:rgb(var(--hb-secondary-900-rgb));--hb-secondary-950-rgb:39 45 0;--color-secondary-950:rgb(var(--hb-secondary-950-rgb));--hb-gray-500-rgb:131 148 150;--color-gray-500:rgb(var(--hb-gray-500-rgb));--hb-gray-50-rgb:248 249 249;--color-gray-50:rgb(var(--hb-gray-50-rgb));--hb-gray-100-rgb:242 244 244;--color-gray-100:rgb(var(--hb-gray-100-rgb));--hb-gray-200-rgb:230 233 234;--color-gray-200:rgb(var(--hb-gray-200-rgb));--hb-gray-300-rgb:217 222 223;--color-gray-300:rgb(var(--hb-gray-300-rgb));--hb-gray-400-rgb:205 212 213;--color-gray-400:rgb(var(--hb-gray-400-rgb));--hb-gray-600-rgb:117 133 135;--color-gray-600:rgb(var(--hb-gray-600-rgb));--hb-gray-700-rgb:104 118 120;--color-gray-700:rgb(var(--hb-gray-700-rgb));--hb-gray-800-rgb:85 96 97;--color-gray-800:rgb(var(--hb-gray-800-rgb));--hb-gray-900-rgb:65 74 75;--color-gray-900:rgb(var(--hb-gray-900-rgb));--hb-gray-950-rgb:39 44 45;--color-gray-950:rgb(var(--hb-gray-950-rgb));--hb-color-background:#002b36;--hb-color-foreground:#93a1a1;--hb-color-header-bg:#073642;--hb-color-header-fg:#93a1a1;--hb-color-footer-bg:#073642;--hb-color-footer-fg:#839496}</style>
     
-
-<h1 id="biography">Biography</h1>
-
-<p>Johannes Späth holds a PhD in program analysis from the University of Paderborn and currently serves as R&D Director at <a href="https://www.certora.com/" target="_blank">Certora</a>. 
-  Before joining Certora, he co-founded <a href="https://www.codeshield.de" target="_blank">CodeShield</a>, a startup that developed cloud security tools based on cutting-edge research technologies. 
-  During his doctoral studies, he gained valuable industry experience working at <a href="https://labs.oracle.com/" target="_blank">Oracle Labs</a> 
-  in Brisbane and at the applied research institutes <a href="https://www.iem.fraunhofer.de/" target="_blank">Fraunhofer IEM</a> and 
-  <a href="https://www.sit.fraunhofer.de/" target="_blank">Fraunhofer SIT</a>. His PhD was advised 
-  by <a href="https://www.bodden.de" target="_blank">Eric Bodden</a> and <a href="https://karimali.ca" target="_blank">Karim Ali</a></p>
-
 
-    <div class="row">
-
-      
-      <div class="col-md-5">
-        <h3>Interests</h3>
-        <ul class="ul-interests">
-          
-          <li>Program Analysis</li>
-          
-          <li>Pointer and Data-Flow Analysis</li>
-          
-          <li>Applied Cryptography and Security</li>
-          
-        </ul>
-      </div>
-      
-
-      
-      <div class="col-md-7">
-        <h3>Education</h3>
-        <ul class="ul-edu fa-ul">
-          
-          <li>
-            <i class="fa-li fas fa-graduation-cap"></i>
-            <div class="description">
-              <p class="course">PhD in Computer Science, 2019</p>
-              <p class="institution">University of Paderborn, Germany</p>
-            </div>
-          </li>
-          
-          <li>
-            <i class="fa-li fas fa-graduation-cap"></i>
-            <div class="description">
-              <p class="course">M.Sc. in Mathematics, 2013</p>
-              <p class="institution">Technical University of Darmstadt, Germany</p>
-            </div>
-          </li>
-          
-          <li>
-            <i class="fa-li fas fa-graduation-cap"></i>
-            <div class="description">
-              <p class="course">B.Sc. in Mathematics, 2011</p>
-              <p class="institution">Johannes-Gutenberg University of Mainz, Germany</p>
-            </div>
-          </li>
-          
-        </ul>
-      </div>
-      
-
-    </div>
-  </div>
-</div>
-
-    </div>
-  </section>
   
-
-  
   
   
-  <section id="skills" class="home-section">
-    <div class="container">
-      
-
 
-<div class="row featurette">
   
-  <div class="col-md-12 section-heading">
-    <h1>Skills</h1>
-    
-  </div>
-  
-
   
 
-  
   
   
-  
-    
-  
-  <div class="col-12 col-sm-4">
-    <div class="featurette-icon"><i class="fas fa-infinity"></i></div>
-    <h3>Mathematics</h3>
-    
-  </div>
-  
-  
-  
-  
-    
-  
-  <div class="col-12 col-sm-4">
-    <div class="featurette-icon"><i class="fab fa-java"></i></div>
-    <h3>Software Development (Java)</h3>
-    
-  </div>
-  
-  
-  
-  
-    
-  
-  <div class="col-12 col-sm-4">
-    <div class="featurette-icon"><i class="fab fa-js"></i></div>
-    <h3>Web Development (JavaScript, SQL)</h3>
-    
-  </div>
-  
-  
-  
-  
-    
-  
-  <div class="col-12 col-sm-4">
-    <div class="featurette-icon"><i class="fas fa-chart-line"></i></div>
-    <h3>Data Analytics (Python, R)</h3>
     
-  </div>
   
   
-  
-  
     
   
-  <div class="col-12 col-sm-4">
-    <div class="featurette-icon"><i class="fas fa-globe-americas"></i></div>
-    <h3>Photography</h3>
     
-  </div>
-  
-  
   
-  
     
   
-  <div class="col-12 col-sm-4">
-    <div class="featurette-icon"><i class="fas fa-music"></i></div>
-    <h3>Piano</h3>
     
-  </div>
-  
-</div>
-
-    </div>
-  </section>
   
 
-  
   
   
-  <section id="experience" class="home-section">
-    <div class="container">
-      
-
-
-
-<div class="row">
-  <div class="col-12 col-lg-4 section-heading">
-    <h1>Experience</h1>
-    
-  </div>
-  <div class="col-12 col-lg-8">
-    
-
-    
-    
-    
-    <div class="row experience">
-      
-      <div class="col-auto text-center flex-column d-none d-sm-flex">
-        <div class="row h-50">
-          <div class="col ">&nbsp;</div>
-          <div class="col">&nbsp;</div>
-        </div>
-        <div class="m-2">
-          <span class="badge badge-pill border exp-fill">&nbsp;</span>
-        </div>
-        <div class="row h-50">
-          <div class="col border-right">&nbsp;</div>
-          <div class="col">&nbsp;</div>
-        </div>
-      </div>
-      
-      <div class="col py-2">
-        <div class="card">
-          <div class="card-body">
-            <div class="float-right text-muted exp-meta">
-              <div>
-                March 2017 –
-                
-                  October 2019
-                
-                
-              </div>
-              <div class="text-right">Paderborn, Germany</div>
-              
-            </div>
-            <h4 class="card-title exp-title text-muted mt-0 mb-1">Research Associate</h4>
-            <h4 class="card-title exp-company text-muted my-0"><a href="https://www.iem.fraunhofer.de/en.html" target="_blank" rel="noopener">Fraunhofer IEM</a></h4>
-            <div class="card-text">Projects:</p>
-
-<ul>
-<li>CogniCrypt (<a href="https://www.iem.fraunhofer.de/en/press-and-news/it-security-oracle-collaborative-research-award.html" target="_blank">Sponsored by an Oracle Collaborative Research Grant</a>)</li>
-<li>Implementation of Data-Flow Analysis</li>
-<li>Threat-Analysis</li>
-<li>Mathematical Risk-Analysis
-<br /></li>
-</ul>
-</div>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-    <div class="row experience">
-      
-      <div class="col-auto text-center flex-column d-none d-sm-flex">
-        <div class="row h-50">
-          <div class="col border-right">&nbsp;</div>
-          <div class="col">&nbsp;</div>
-        </div>
-        <div class="m-2">
-          <span class="badge badge-pill border ">&nbsp;</span>
-        </div>
-        <div class="row h-50">
-          <div class="col border-right">&nbsp;</div>
-          <div class="col">&nbsp;</div>
-        </div>
-      </div>
-      
-      <div class="col py-2">
-        <div class="card">
-          <div class="card-body">
-            <div class="float-right text-muted exp-meta">
-              <div>
-                August 2016 –
-                
-                  January 2017
-                
-                
-              </div>
-              <div class="text-right">Brisbane, Australia</div>
-              
-            </div>
-            <h4 class="card-title exp-title text-muted mt-0 mb-1">Research Intern</h4>
-            <h4 class="card-title exp-company text-muted my-0"><a href="https://labs.oracle.com/" target="_blank" rel="noopener">Oracle Labs</a></h4>
-            <div class="card-text"><p>Project:</p>
 
-<p>Modular Points-To Analysis implemented in Datalog (<a href="http://doop.program-analysis.org" target="_blank">DOOP</a> and <a href="https://github.com/souffle-lang/souffle" target="_blank">souffle</a>).</p>
-</div>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-    <div class="row experience">
-      
-      <div class="col-auto text-center flex-column d-none d-sm-flex">
-        <div class="row h-50">
-          <div class="col border-right">&nbsp;</div>
-          <div class="col">&nbsp;</div>
-        </div>
-        <div class="m-2">
-          <span class="badge badge-pill border ">&nbsp;</span>
-        </div>
-        <div class="row h-50">
-          <div class="col ">&nbsp;</div>
-          <div class="col">&nbsp;</div>
-        </div>
-      </div>
-      
-      <div class="col py-2">
-        <div class="card">
-          <div class="card-body">
-            <div class="float-right text-muted exp-meta">
-              <div>
-                March 2014 –
-                
-                  July 2016
-                
-                
-              </div>
-              <div class="text-right">Darmstadt, Germany</div>
-              
-            </div>
-            <h4 class="card-title exp-title text-muted mt-0 mb-1">Research Associate</h4>
-            <h4 class="card-title exp-company text-muted my-0"><a href="https://www.sit.fraunhofer.de/en/" target="_blank" rel="noopener">Fraunhofer SIT</a></h4>
-            <div class="card-text">Projects:</p>
-
-<ul>
-<li>Pentesting of Web Applications</li>
-<li>Teaching &ldquo;Designing Static Code Analysis for Large Scale&rdquo;</li>
-<li><a href="https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Publikationen/Studien/Truecrypt/Truecrypt.pdf?__blob=publicationFile&amp;v=2" target="_blank">Security Audit TrueCrypt</a> for the German Federal Office for Information Security (BSI)
-<br /></li>
-</ul>
-</div>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-    
-  </div>
-</div>
-
-    </div>
-  </section>
-  
-
   
   
   
-  <section id="publications_selected" class="home-section">
-    <div class="container">
-      
-
-
-
-<div class="row">
-  <div class="col-12 col-lg-4 section-heading">
-    <h1>Selected Publications</h1>
-    
-  </div>
-  <div class="col-12 col-lg-8">
-    
-
     
       
-    
-
-    
-    
+        <link rel="stylesheet" href="/css/_entry.15b9bf1b6f1d907ad6c4c6ad5754c68f4150bfdf744b14ef5cb1d14431e7c8e7.css" integrity="sha256-Fbm/G28dkHrWxMatV1TGj0FQv990SxTvXLHRRDHnyOc=" crossorigin="anonymous">
       
-        <div class="pub-list-item card-simple" itemscope itemtype="http://schema.org/CreativeWork">
-
-  
-  
-  
-
-  <h3 class="article-title" itemprop="name">
-    <a href="/publication/popl2019_spds/" itemprop="url">Context-, Flow- and Field-Sensitive Data-Flow Analysis using Synchronized Pushdown Systems</a>
-  </h3>
-
-  <div class="pub-abstract" itemprop="text">
-    
-    
-    
-  </div>
-
-  <div class="pub-authors" itemprop="author">
-    
-    Johannes Späth, Karim Ali, Eric Bodden
-    
-  </div>
-
-  <div class="pub-publication">
-    
-    <em>46th ACM SIGPLAN Symposium on Principles of Programming Languages, POPL 2019, January 16-18, 2019, Lisbon, Portugal</em>,
-    
-    2018
-  </div>
-
-  <div class="pub-links">
     
-
-
-
-
-
-
   
 
 
-
-  
-    
   
-
-
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://johspaeth.github.io/publications/boomerangPDS.pdf" target="_blank" rel="noopener">
-  PDF
-</a>
-
-
-
-<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
-        data-filename="/publication/popl2019_spds/POPL2019_SPDS.bib">
-  Cite
-</button>
-
-
-
-
-
-
-
-
-
-
-
-
-
-  </div>
-
-</div>
-
-      
-    
-
-  </div>
-</div>
-
-    </div>
-  </section>
-  
-
-  
-  
-  
-  <section id="publications" class="home-section">
-    <div class="container">
-      
-
-
-
-
-<div class="row">
-  <div class="col-12 col-lg-4 section-heading">
-    <h1>Publications</h1>
-    
-    
-  </div>
-  <div class="col-12 col-lg-8">
-    
-
-    
-      
-    
-
-    
-
-    
-    
-      
-        <div class="media stream-item" itemscope itemtype="http://schema.org/Event">
-  <div class="media-body">
-
-    <h3 class="article-title mb-0 mt-0" itemprop="name">
-      <a href="/publication/dissertation/" itemprop="url">Synchronized Pushdown Systems for Pointer and Data-Flow Analysis (PhD Dissertation)</a>
-    </h3>
-
-    
-    
-    
-
-    <div class="stream-meta article-metadata">
-      <div itemprop="author">
-        Johannes Späth</div>
-    </div>
-
-    <div class="talk-links">
-      
-
-
-
-
-
-
-  
-
-
-
-  
-    
-  
-
-
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://johspaeth.github.io/publications/Dissertation.pdf" target="_blank" rel="noopener">
-  PDF
-</a>
-
-
-
-<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
-        data-filename="/publication/dissertation/Dissertation.bib">
-  Cite
-</button>
-
-
-
-
-
-
-
-
-
-
-
-
-
-    </div>
-
-  </div>
-  <div class="ml-3">
-    
-    
-  </div>
-</div>
-
-      
-    
-      
-        <div class="media stream-item" itemscope itemtype="http://schema.org/Event">
-  <div class="media-body">
-
-    <h3 class="article-title mb-0 mt-0" itemprop="name">
-      <a href="/publication/popl2019_spds/" itemprop="url">Context-, Flow- and Field-Sensitive Data-Flow Analysis using Synchronized Pushdown Systems</a>
-    </h3>
-
-    
-    
-    
-
-    <div class="stream-meta article-metadata">
-      <div itemprop="author">
-        Johannes Späth, Karim Ali, Eric Bodden</div>
-    </div>
-
-    <div class="talk-links">
-      
-
-
-
-
-
-
-  
-
-
-
-  
-    
-  
-
-
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://johspaeth.github.io/publications/boomerangPDS.pdf" target="_blank" rel="noopener">
-  PDF
-</a>
-
-
-
-<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
-        data-filename="/publication/popl2019_spds/POPL2019_SPDS.bib">
-  Cite
-</button>
-
-
-
-
-
-
-
-
-
-
-
-
-
-    </div>
-
-  </div>
-  <div class="ml-3">
-    
-    
-  </div>
-</div>
-
-      
-    
-      
-        <div class="media stream-item" itemscope itemtype="http://schema.org/Event">
-  <div class="media-body">
-
-    <h3 class="article-title mb-0 mt-0" itemprop="name">
-      <a href="/publication/ecoop2018_crysl/" itemprop="url">CrySL: An Extensible Approach to Validating the Correct Usage of CryptographicAPIs</a>
-    </h3>
-
-    
-    
-    
-
-    <div class="stream-meta article-metadata">
-      <div itemprop="author">
-        Stefan Krüger, Johannes Späth, Karim Ali, Eric Bodden, Mira Mezini</div>
-    </div>
-
-    <div class="talk-links">
-      
-
-
-
-
-
-
-  
-
-
-
-  
-
-
-
-
-<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
-        data-filename="/publication/ecoop2018_crysl/ECOOP2018_CrySL.bib">
-  Cite
-</button>
-
-
-
-
-
-
-
-
-
-
-
-
-
-    </div>
-
-  </div>
-  <div class="ml-3">
-    
-    
-  </div>
-</div>
-
-      
-    
-      
-        <div class="media stream-item" itemscope itemtype="http://schema.org/Event">
-  <div class="media-body">
-
-    <h3 class="article-title mb-0 mt-0" itemprop="name">
-      <a href="/publication/oopsla2017_ideal/" itemprop="url">IDEal: Efficient and Precise Alias-Aware Data-Flow Analysis</a>
-    </h3>
-
-    
-    
-    
-
-    <div class="stream-meta article-metadata">
-      <div itemprop="author">
-        Johannes Späth, Karim Ali, Eric Bodden</div>
-    </div>
-
-    <div class="talk-links">
-      
-
-
-
-
-
-
-  
-
-
-
-  
-    
-  
-
-
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="http://doi.acm.org/10.1145/3133923" target="_blank" rel="noopener">
-  PDF
-</a>
-
-
-
-<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
-        data-filename="/publication/oopsla2017_ideal/OOPSLA2017_IDEAL.bib">
-  Cite
-</button>
-
-
-
-
-
-
-
-
-
-
-
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://doi.org/10.1145/3133923" target="_blank" rel="noopener">
-  DOI
-</a>
-
-
-
-    </div>
-
-  </div>
-  <div class="ml-3">
-    
-    
-  </div>
-</div>
-
-      
-    
-      
-        <div class="media stream-item" itemscope itemtype="http://schema.org/Event">
-  <div class="media-body">
-
-    <h3 class="article-title mb-0 mt-0" itemprop="name">
-      <a href="/publication/ecoop2016_boomerang/" itemprop="url">Boomerang: Demand-Driven Flow- and Context-Sensitive Pointer Analysisfor Java</a>
-    </h3>
-
-    
-    
-    
-
-    <div class="stream-meta article-metadata">
-      <div itemprop="author">
-        Johannes Späth, Lisa Nguyen Quang Do, Karim Ali, Eric Bodden</div>
-    </div>
-
-    <div class="talk-links">
-      
-
-
-
-
-
-
-  
-
-
-
-  
-
-
-
-
-<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
-        data-filename="/publication/ecoop2016_boomerang/ECOOP2016_Boomerang.bib">
-  Cite
-</button>
-
-
-
-
-
-
-
-
-
-
-
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://doi.org/10.4230/LIPIcs.ECOOP.2016.22" target="_blank" rel="noopener">
-  DOI
-</a>
-
-
-
-    </div>
-
-  </div>
-  <div class="ml-3">
-    
-    
-  </div>
-</div>
-
-      
-    
-      
-        <div class="media stream-item" itemscope itemtype="http://schema.org/Event">
-  <div class="media-body">
-
-    <h3 class="article-title mb-0 mt-0" itemprop="name">
-      <a href="/publication/ase2015_ifdsapa/" itemprop="url">Access-Path Abstraction: Scaling Field-Sensitive Data-Flow Analysiswith Unbounded Access Paths</a>
-    </h3>
-
-    
-    
-    
-
-    <div class="stream-meta article-metadata">
-      <div itemprop="author">
-        Johannes Lerch, Johannes Späth, Eric Bodden, Mira Mezini</div>
-    </div>
-
-    <div class="talk-links">
-      
-
-
-
-
-
-
-  
-
-
-
-  
-    
-  
-
-
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://doi.org/10.1109/ASE.2015.9" target="_blank" rel="noopener">
-  PDF
-</a>
-
-
-
-<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
-        data-filename="/publication/ase2015_ifdsapa/ASE2015_IFDSAPA.bib">
-  Cite
-</button>
-
-
-
-
-
-
-
-
-
-
-
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://doi.org/10.1109/ASE.2015.9" target="_blank" rel="noopener">
-  DOI
-</a>
-
-
-
-    </div>
-
-  </div>
-  <div class="ml-3">
-    
-    
-  </div>
-</div>
-
-      
-    
-
-  </div>
-</div>
-
-    </div>
-  </section>
-  
-
-  
-  
-  
-  <section id="talks" class="home-section">
-    <div class="container">
-      
-
-
-
-
-<div class="row">
-  <div class="col-12 col-lg-4 section-heading">
-    <h1>Recent &amp; Upcoming Talks</h1>
-    
-    
-  </div>
-  <div class="col-12 col-lg-8">
-    
-
-    
-
-    
-    
-
-    
-      
-        <div class="media stream-item" itemscope itemtype="http://schema.org/Event">
-  <div class="media-body">
-
-    <h3 class="article-title mb-0 mt-0" itemprop="name">
-      <a href="/talk/popl-spds/" itemprop="url">Context-, Flow- and Field-Sensitive Data-Flow Analysis using Synchronized Pushdown Systems</a>
-    </h3>
-
-    
-    
-    
-
-    <div class="stream-meta article-metadata">
-      <div>
-        
-        Jan 17, 2019
-        
-
-        
-          <span class="middot-divider"></span> POPL 2019
-        
-      </div>
-      <div itemprop="author">
-        Johannes Späth</div>
-    </div>
-
-    <div class="talk-links">
-      
-
-
-
-
-
-
-
-  
-  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/project/spds/">
-    Project
-  </a>
-  
-
-
-
-    </div>
-
-  </div>
-  <div class="ml-3">
-    
-    
-  </div>
-</div>
-
-      
-    
-      
-        <div class="media stream-item" itemscope itemtype="http://schema.org/Event">
-  <div class="media-body">
-
-    <h3 class="article-title mb-0 mt-0" itemprop="name">
-      <a href="/talk/eclipsecon-2018/" itemprop="url">You forgot to changeit - CogniCrypt knows it!</a>
-    </h3>
-
-    
-    
-    
-
-    <div class="stream-meta article-metadata">
-      <div>
-        
-        Jun 18, 2018
-        
-
-        
-          <span class="middot-divider"></span> EclipseCon France 2018
-        
-      </div>
-      <div itemprop="author">
-        Johannes Späth, Stefan Krüger</div>
-    </div>
-
-    <div class="talk-links">
-      
-
-
-
-
-
-
-
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://www.youtube.com/watch?v=Ce3GJYHGjpQ" target="_blank" rel="noopener">
-  Video
-</a>
-
-
-
-
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://github.com/CROSSINGTUD/CogniCrypt" target="_blank" rel="noopener">
-  Code
-</a>
-
-
-  
-  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/project/boomerang/">
-    Project
-  </a>
-  
-
-
-
-    </div>
-
-  </div>
-  <div class="ml-3">
-    
-    
-  </div>
-</div>
-
-      
-    
-      
-        <div class="media stream-item" itemscope itemtype="http://schema.org/Event">
-  <div class="media-body">
-
-    <h3 class="article-title mb-0 mt-0" itemprop="name">
-      <a href="/talk/oopsla-2017/" itemprop="url">IDEal: Efficient and Precise Alias-aware Data-Flow Analysis</a>
-    </h3>
-
-    
-    
-    
-
-    <div class="stream-meta article-metadata">
-      <div>
-        
-        Oct 27, 2017
-        
-
-        
-          <span class="middot-divider"></span> OOPSLA 2017
-        
-      </div>
-      <div itemprop="author">
-        Johannes Späth</div>
-    </div>
-
-    <div class="talk-links">
-      
-
-
-
-
-
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://dl.acm.org/citation.cfm?doid=3133923" target="_blank" rel="noopener">
-  PDF
-</a>
-
-
-
-
-
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://www.youtube.com/watch?v=0gGlXgnoX18" target="_blank" rel="noopener">
-  Video
-</a>
-
-
-
-
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://github.com/secure-software-engineering/ideal" target="_blank" rel="noopener">
-  Code
-</a>
-
-
-  
-  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/project/ideal/">
-    Project
-  </a>
-  
-
-
-
-    </div>
-
-  </div>
-  <div class="ml-3">
-    
-    
-  </div>
-</div>
-
-      
-    
-      
-        <div class="media stream-item" itemscope itemtype="http://schema.org/Event">
-  <div class="media-body">
-
-    <h3 class="article-title mb-0 mt-0" itemprop="name">
-      <a href="/talk/ecoop-2016/" itemprop="url">Boomerang: Demand-Driven Flow- and Context-Sensitive Pointer Analysisfor Java</a>
-    </h3>
-
-    
-    
-    
-
-    <div class="stream-meta article-metadata">
-      <div>
-        
-        Jul 22, 2016
-        
-
-        
-          <span class="middot-divider"></span> ECOOP 2016
-        
-      </div>
-      <div itemprop="author">
-        Johannes Späth</div>
-    </div>
-
-    <div class="talk-links">
-      
-
-
-
-
-
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="http://drops.dagstuhl.de/opus/volltexte/2016/6116/pdf/LIPIcs-ECOOP-2016-22.pdf" target="_blank" rel="noopener">
-  PDF
-</a>
-
-
-
-
-
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://www.youtube.com/watch?v=aTt4M2_TGPI" target="_blank" rel="noopener">
-  Video
-</a>
-
-
-
-
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://github.com/secure-software-engineering/boomerang" target="_blank" rel="noopener">
-  Code
-</a>
-
-
-  
-  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/project/boomerang/">
-    Project
-  </a>
-  
-
-
-
-    </div>
-
-  </div>
-  <div class="ml-3">
-    
-    
-  </div>
-</div>
-
-      
-    
-  </div>
-</div>
-
-    </div>
-  </section>
-  
-
-  
-  
-  
-  <section id="projects" class="home-section">
-    <div class="container">
-      
-
-
-
-<div class="row">
-  <div class="col-12 col-lg-4 section-heading">
-    <h1>Projects</h1>
-    
-  </div>
-  <div class="col-12 col-lg-8">
-    
-
-    
-
-    
-
-    <div class="row isotope projects-container js-layout-masonry">
-
-      
-        
-        
-        
-        
-        
-      <div class="col-12 col-md-6 col-lg-4 project-item isotope-item static-analysis pointer-analysis pushdown-systems automata">
-        <div class="card">
-          
-          <div class="card-text">
-            <h4><a href="/project/spds/" >Synchronized Pushdown Systems</a></h4>
-            <div class="card-desription">
-              <p>Efficient and precise data-flow analysis.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-        
-        
-        
-        
-        
-      <div class="col-12 col-md-6 col-lg-4 project-item isotope-item static-analysis security">
-        <div class="card">
-          
-          <div class="card-text">
-            <h4><a href="/project/ideal/" >Data-Flow Framework IDEal</a></h4>
-            <div class="card-desription">
-              <p>$IDE^{al}$ is an efficient and generic framework for pointer-tracking data-flow analysis.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-        
-        
-        
-        
-        
-      <div class="col-12 col-md-6 col-lg-4 project-item isotope-item static-analysis security">
-        <div class="card">
-          
-          
-          <a href="/project/cognicrypt/"  class="card-image hover-overlay"
-             >
-            <img src="/project/cognicrypt/featured_huc84f93f36caabf2050726e943f43f8f6_15515_550x550_fill_q90_box_smart1.jpg" alt="" class="img-responsive">
-          </a>
-          
-          <div class="card-text">
-            <h4><a href="/project/cognicrypt/" >CogniCrypt</a></h4>
-            <div class="card-desription">
-              <p>Support for software developers to securely using cryptography</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-        
-        
-        
-        
-        
-      <div class="col-12 col-md-6 col-lg-4 project-item isotope-item static-analysis pointer-analysis">
-        <div class="card">
-          
-          <div class="card-text">
-            <h4><a href="/project/boomerang/" >Pointer Analysis Boomerang</a></h4>
-            <div class="card-desription">
-              <p>Boomerang is a demand-driven pointer analysis for Java.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-
-    </div>
-
-    
-
-  </div>
-</div>
-
-    </div>
-  </section>
-  
-
-  
-  
-  
-  <section id="contact" class="home-section">
-    <div class="container">
-      
-
-
-
-
-<div class="row contact-widget">
-  <div class="col-12 col-lg-4 section-heading">
-    <h1>Contact</h1>
-    
-  </div>
-  <div class="col-12 col-lg-8">
-    
-
-    
-
-    <ul class="fa-ul" itemscope>
-
-      
-      <li>
-        <i class="fa-li fas fa-envelope fa-2x" aria-hidden="true"></i>
-        <span id="person-email" itemprop="email"><a href="mailto:mail@johspaeth.de">mail@johspaeth.de</a></span>
-      </li>
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-    </ul>
-
-    
-
-  </div>
-</div>
-
-    </div>
-  </section>
-  
-
-
-
-<div class="container">
-  <footer class="site-footer">
-  
-
-  <p class="powered-by">
-    &copy; 2018 &middot; 
-
-    Powered by the
-    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
-    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
-
-    
-    <span class="float-right" aria-hidden="true">
-      <a href="#" id="back_to_top">
-        <span class="button_icon">
-          <i class="fas fa-chevron-up fa-2x"></i>
-        </span>
-      </a>
-    </span>
-    
-  </p>
-</footer>
-
-</div>
-
-
-<div id="modal" class="modal fade" role="dialog">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">Cite</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <pre><code class="tex hljs"></code></pre>
-      </div>
-      <div class="modal-footer">
-        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
-          <i class="fas fa-copy"></i> Copy
-        </a>
-        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
-          <i class="fas fa-download"></i> Download
-        </a>
-        <div id="modal-error"></div>
-      </div>
-    </div>
-  </div>
-</div>
-
-    
-
-    
-    
-    
-    
-    <script src="/js/mathjax-config.500a6cbb2c0f345fcecc21b3116d6637aa78f1f11db8081ea581abe05390c2e8f3bbffe61be3cf0217baf785c40efceabe51050a4f007e69af94efd3643260e8.js" integrity="sha512-UApsuywPNF/OzCGzEW1mN6p48fEduAgepYGr4FOQwujzu//mG&#43;PPAhe694XEDvzqvlEFCk8AfmmvlO/TZDJg6A=="></script>
-    
-
-    
-    
-    
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg==" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.3/imagesloaded.pkgd.min.js" integrity="sha512-umsR78NN0D23AzgoZ11K7raBD+R6hqKojyBZs1w8WvYlsI+QuKRGBx3LFCwhatzBunCjDuJpDHwxD13sLMbpRA==" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha256-VsEqElsCHSGmnmHXGQzvoWjWwoznFSZc6hs7ARLRacQ=" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.4/isotope.pkgd.min.js" integrity="sha512-VDBOIlDbuC4VWxGJNmuFRQ0Li0SKkDpmGyuhAG5LTDLd/dJ/S0WMVxriR2Y+CyPL5gzjpN4f/6iqWVBJlht0tQ==" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
-
-      
-        
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
-        
-      
-
-      
-      
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_CHTML-full" integrity="sha256-GhM+5JHb6QUzOQPXSJLEWP7R73CbkisjzK5Eyij4U9w=" crossorigin="anonymous" async></script>
-      
-    
-
-    <script src="/js/hugo-academic.js"></script>
-    
-
-    
-    
-
-    
-    
-    
-
-    
-    
-    <script>hljs.initHighlightingOnLoad();</script>
-    
-
-    
-    
-    <script>
-      const search_index_filename = "/index.json";
-      const i18n = {
-        'placeholder': "Search...",
-        'results': "Search Results",
-        'no_results': "No results found"
-      };
-      const content_type = {
-        'post': "Posts",
-        'project': "Projects",
-        'publication' : "Publications",
-        'talk' : "Talks"
-        };
-    </script>
-    
-
-    
-    
-
-    
-    
-    <script id="search-hit-fuse-template" type="text/x-template">
-      <div class="search-hit" id="summary-{{key}}">
-      <div class="search-hit-content">
-        <div class="search-hit-name">
-          <a href="{{relpermalink}}">{{title}}</a>
-          <div class="article-metadata search-hit-type">{{type}}</div>
-          <p class="search-hit-description">{{snippet}}</p>
-        </div>
-      </div>
-      </div>
-    </script>
-    
-
-    
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
-    <script src="/js/search.js"></script>
-    
-
-    
-    
-
-  </body>
-</html>
-
-
+<script src=/js/hb-head.min.e9ff67ddf77122b225756bf5a926e24420bea2586199fddcb3b1813a009f4ee5.js integrity="sha256-6f9n3fdxIrIldWv1qSbiRCC+olhhmf3cs7GBOgCfTuU=" crossorigin=anonymous></script><link rel=alternate href=/index.xml type=application/rss+xml title="Johannes Späth"><link rel=icon type=image/png href=/media/icon_hu_75625d0a9f6421f7.png><link rel=apple-touch-icon type=image/png href=/media/icon_hu_5ca66c54b8b462fe.png><link rel=canonical href=https://johspaeth.de/><meta property="twitter:card" content="summary"><meta property="og:site_name" content="Johannes Späth"><meta property="og:url" content="https://johspaeth.de/"><meta property="og:title" content="Johannes Späth"><meta property="og:description" content="Computer scientist and engineer with 12 years of experience spanning academic research, startup founding, and technical leadership. Specializes in program analysis, formal verification, and software security."><meta property="og:image" content="https://johspaeth.de/media/icon_hu_eee4a95885829ab2.png"><meta property="twitter:image" content="https://johspaeth.de/media/icon_hu_eee4a95885829ab2.png"><meta property="og:locale" content="en-us"><meta property="og:updated_time" content="2022-10-24T00:00:00+00:00"><script type=application/ld+json>{"@context":"https://schema.org","@type":"WebSite","potentialAction":{"@type":"SearchAction","target":"https://johspaeth.de/?q={search_term_string}","query-input":"required name=search_term_string"},"url":"https://johspaeth.de/"}</script><title>Johannes Späth</title><link rel=preconnect href=https://fonts.googleapis.com><link rel=preconnect href=https://fonts.gstatic.com crossorigin><link href="https://fonts.googleapis.com/css2?family=Lora:wght@100..900&amp;family=Source+Serif+4:wght@100..900&amp;family=Source+Code+Pro:wght@400&amp;display=swap" rel=stylesheet><style>:root{--hb-font-heading:'Lora', ui-serif, Georgia, Cambria, 'Times New Roman', Times, serif;--hb-font-body:'Source Serif 4', ui-serif, Georgia, Cambria, 'Times New Roman', Times, serif;--hb-font-code:'Source Code Pro', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;--hb-font-nav:'Lora', ui-serif, Georgia, Cambria, 'Times New Roman', Times, serif;--hb-font-weight-heading:500;--hb-font-weight-body:400;--hb-font-weight-body-bold:600;--hb-font-leading-heading:1.2;--hb-font-leading-body:1.7;--hb-font-leading-code:1.5;--hb-font-tracking-heading:0;--hb-font-tracking-body:0;--hb-font-tracking-caps:0.05em;--hb-font-size-base:1rem;--hb-font-size-sm:0.875rem;--hb-font-size-lg:1.125rem;--hb-font-family-sans:'Source Serif 4', ui-serif, Georgia, Cambria, 'Times New Roman', Times, serif}</style><style>:root{--hb-radius:0.5rem;--hb-spacing-base:1.25rem;--hb-spacing-section:6rem}</style><script defer src=/js/hugo-blox-en.min.50bf5376bbbd2aea9b2e03e195eeee2f0afad8e84589a94b0ee493111b4be271.js integrity="sha256-UL9Tdru9KuqbLgPhle7uLwr62OhFialLDuSTERtL4nE="></script><script async defer src=https://buttons.github.io/buttons.js></script></head><body class="bg-[var(--hb-color-background)] text-[var(--hb-color-foreground)] page-wrapper" id=top><div id=page-bg></div><div class="page-header sticky top-0 z-30"><header id=site-header class=header><nav class="navbar px-3 flex justify-start"><div class="order-0 h-full"><a class=navbar-brand href=/ title="Johannes Späth">Johannes Späth</a></div><input id=nav-toggle type=checkbox class=hidden>
+<label for=nav-toggle class="order-3 cursor-pointer flex items-center lg:hidden text-[var(--hb-color-header-fg)] lg:order-1"><svg id="show-button" class="h-6 fill-current block" viewBox="0 0 20 20"><title>Open Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0V0z"/></svg>
+<svg id="hide-button" class="h-6 fill-current hidden" viewBox="0 0 20 20"><title>Close Menu</title><polygon points="11 9 22 9 22 11 11 11 11 22 9 22 9 11 -2 11 -2 9 9 9 9 -2 11 -2" transform="rotate(45 10 10)"/></svg></label><ul id=nav-menu class="navbar-nav order-3 hidden lg:flex w-full pb-6 lg:order-1 lg:w-auto lg:space-x-2 lg:pb-0 xl:space-x-8 justify-start"><li class=nav-item><a class="nav-link active" href=/>Home</a></li><li class=nav-item><a class=nav-link href=/#experience>Experience</a></li><li class=nav-item><a class=nav-link href=/#papers>Publications</a></li><li class=nav-item><a class=nav-link href=/#talks>Talks</a></li></ul><div class="order-1 ml-auto flex items-center md:order-2 lg:ml-0"><div class="px-3 text-[var(--hb-color-header-fg)] hover:text-primary-500
+[&.active]:font-bold [&.active]:text-primary-500"><button class="theme-toggle mt-1" accesskey=t title=appearance>
+<svg id="moon" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="block dark:hidden"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+<svg id="sun" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="hidden dark:block"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button></div></div></nav></header></div><div class=page-body><section id=section-resume-biography-3 class="relative isolate overflow-hidden hbb-section blox-_"><div class="absolute inset-0 -z-10"><div class="absolute inset-0 bg-gradient-to-br from-primary-500/20 via-transparent to-secondary-500/20"></div><div class="absolute top-0 left-1/4 w-96 h-96 bg-primary-500/20 rounded-full filter blur-3xl animate-pulse"></div><div class="absolute bottom-0 right-1/4 w-96 h-96 bg-secondary-500/20 rounded-full filter blur-3xl animate-pulse" style=animation-delay:2s></div></div><div class=home-section-bg></div><div class="resume-biography py-8 px-4 sm:py-12 md:py-16 lg:py-24 xl:py-32 relative overflow-hidden"><div class="max-w-7xl mx-auto"><div class="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8 items-start"><div class="md:col-span-4 flex flex-col items-center text-center space-y-6 md:space-y-8"><div class="avatar-wrapper mb-4" style=width:200px;height:200px><img class="avatar rounded-full border-4 border-white shadow-2xl" src=/media/authors/me_hu_bf18a61f87cc5cac.png alt="Johannes Späth" width=200 height=200 style=width:200px;height:200px;object-fit:cover></div><div class=space-y-3><h1 class="text-3xl sm:text-4xl lg:text-5xl font-black text-gray-900 dark:text-white leading-tight">Johannes Späth</h1><p class="text-lg text-gray-600 dark:text-gray-400">(Open to new opportunities)</p><p class="text-2xl font-semibold text-primary-600 dark:text-primary-400">Previously R&amp;D Director</p><p class="text-lg text-gray-700 dark:text-gray-300"><a href=https://www.certora.com/ target=_blank rel=noopener class="hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Certora Ltd</a></p></div><div class="flex flex-wrap justify-center gap-4"><a href=mailto:joh.spaeth@gmail.com aria-label=at-symbol title="E-mail Me" class="w-12 h-12 flex items-center justify-center rounded-full bg-white dark:bg-gray-800 text-gray-600 dark:text-gray-400
+shadow-md hover:shadow-xl hover:scale-110 hover:-translate-y-1
+transition-all duration-300 border border-gray-200 dark:border-gray-700"><svg class="w-6 h-6" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16.5 12a4.5 4.5.0 11-9 0 4.5 4.5.0 019 0m0 0c0 1.657 1.007 3 2.25 3S21 13.657 21 12a9 9 0 10-2.636 6.364M16.5 12V8.25"/></svg>
+</a><a href=https://github.com/johspaeth target=_blank rel=noopener aria-label=brands/github class="w-12 h-12 flex items-center justify-center rounded-full bg-white dark:bg-gray-800 text-gray-600 dark:text-gray-400
+shadow-md hover:shadow-xl hover:scale-110 hover:-translate-y-1
+transition-all duration-300 border border-gray-200 dark:border-gray-700"><svg class="w-6 h-6" viewBox="0 0 24 24"><path fill="currentColor" d="M12 .297c-6.63.0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577.0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93.0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176.0.0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22.0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22.0 1.606-.015 2.896-.015 3.286.0.315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+</a><a href=https://www.linkedin.com/in/dr-johannes-sp%C3%A4th-85b610135/ target=_blank rel=noopener aria-label=brands/linkedin class="w-12 h-12 flex items-center justify-center rounded-full bg-white dark:bg-gray-800 text-gray-600 dark:text-gray-400
+shadow-md hover:shadow-xl hover:scale-110 hover:-translate-y-1
+transition-all duration-300 border border-gray-200 dark:border-gray-700"><svg class="w-6 h-6" viewBox="0 0 24 24"><path fill="currentColor" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853.0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601.0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433A2.06 2.06.0 013.274 5.368a2.064 2.064.0 112.063 2.065m1.782 13.019H3.555V9h3.564zM22.225.0H1.771C.792.0.0.774.0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2.0 22.222.0z"/></svg>
+</a><a href="https://scholar.google.com/citations?user=wJ4_HPoAAAAJ&amp;hl=de" target=_blank rel=noopener aria-label=academicons/google-scholar class="w-12 h-12 flex items-center justify-center rounded-full bg-white dark:bg-gray-800 text-gray-600 dark:text-gray-400
+shadow-md hover:shadow-xl hover:scale-110 hover:-translate-y-1
+transition-all duration-300 border border-gray-200 dark:border-gray-700"><svg class="w-6 h-6" viewBox="0 0 512 512"><path fill="currentColor" d="M343.759 106.662V79.43L363.524 64h-213.89L20.476 176.274h85.656a82 82 0 00-.219 6.225c0 20.845 7.22 38.087 21.672 51.861 14.453 13.797 32.252 20.648 53.327 20.648 4.923.0 9.75-.368 14.438-1.024-2.907 6.5-4.374 12.523-4.374 18.142.0 9.875 4.499 20.43 13.467 31.642-39.234 2.67-68.061 9.732-86.437 21.163-10.531 6.5-19 14.704-25.39 24.531-6.391 9.9-9.578 20.515-9.578 31.962.0 9.648 2.062 18.336 6.219 26.062 4.156 7.726 9.578 14.07 16.312 18.984 6.718 4.968 14.469 9.101 23.219 12.469 8.734 3.344 17.406 5.718 26.061 7.062A167 167 0 00180.555 448c13.469.0 26.953-1.734 40.547-5.187 13.562-3.485 26.28-8.642 38.171-15.493 11.86-6.805 21.515-16.086 28.922-27.718 7.39-11.68 11.094-24.805 11.094-39.336.0-11.016-2.25-21.039-6.75-30.14-4.468-9.073-9.938-16.542-16.452-22.345-6.501-5.813-13-11.155-19.516-15.968-6.5-4.845-12-9.75-16.468-14.813-4.485-5.046-6.735-10.054-6.735-14.984.0-4.921 1.734-9.672 5.216-14.265 3.455-4.61 7.674-9.048 12.61-13.306 4.937-4.25 9.875-8.968 14.796-14.133 4.922-5.147 9.141-11.827 12.61-20.008 3.485-8.18 5.203-17.445 5.203-27.757.0-13.453-2.547-24.46-7.547-33.314-.594-1.022-1.218-1.803-1.875-3.022l56.907-46.672v17.119c-7.393.93-6.624 5.345-6.624 10.635V245.96c0 5.958 4.875 10.834 10.834 10.834h3.989c5.958.0 10.833-4.875 10.833-10.834V117.293c0-5.277.778-9.688-6.561-10.63m-107.36 222.48c1.14.75 3.704 2.78 7.718 6.038 4.05 3.243 6.797 5.695 8.266 7.414a444 444 0 016.376 7.547c2.813 3.375 4.718 6.304 5.718 8.734q1.5 3.717 3.047 8.946a38.3 38.3.0 011.485 10.562c0 17.048-6.564 29.68-19.656 37.859-13.125 8.18-28.767 12.274-46.938 12.274-9.187.0-18.203-1.093-27.063-3.196-8.843-2.116-17.311-5.336-25.39-9.601-8.078-4.258-14.577-10.204-19.5-17.797-4.938-7.64-7.407-16.415-7.407-26.25.0-10.32 2.797-19.29 8.422-26.906 5.594-7.625 12.938-13.391 22.032-17.315 9.063-3.946 18.25-6.742 27.562-8.398a158 158 0 0128.438-2.555c4.47.0 7.936.25 10.405.696.455.219 3.032 2.07 7.735 5.563 4.704 3.462 7.625 5.595 8.75 6.384zm-3.359-100.579c-7.406 8.86-17.734 13.288-30.953 13.288-11.86.0-22.298-4.764-31.266-14.312-9-9.523-15.422-20.328-19.344-32.43-3.937-12.109-5.906-23.984-5.906-35.648q.002-20.54 10.781-34.976c7.187-9.65 17.5-14.485 30.938-14.485 11.875.0 22.374 5.038 31.437 15.157 9.094 10.085 15.61 21.413 19.517 33.968 3.922 12.54 5.873 24.53 5.873 35.984.0 13.446-3.702 24.61-11.076 33.454z"/></svg></a></div></div><div class=md:col-span-8><div class=mb-12><div class="flex items-center gap-4 mb-8"><div class="flex-shrink-0 w-12 h-12 bg-primary-100 dark:bg-primary-900/50 rounded-full flex items-center justify-center"><svg class="w-6 h-6 text-primary-600 dark:text-primary-400" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 9h3.75M15 12h3.75M15 15h3.75M4.5 19.5h15a2.25 2.25.0 002.25-2.25V6.75A2.25 2.25.0 0019.5 4.5h-15A2.25 2.25.0 002.25 6.75v10.5A2.25 2.25.0 004.5 19.5m6-10.125a1.875 1.875.0 11-3.75.0 1.875 1.875.0 013.75.0m1.294 6.336a6.7 6.7.0 01-3.17.789 6.7 6.7.0 01-3.168-.789 3.376 3.376.0 016.338.0"/></svg></div><h2 class="text-xl sm:text-2xl lg:text-3xl font-bold text-gray-900 dark:text-white tracking-tight">Professional Summary</h2></div><div class="prose prose-lg dark:prose-invert text-gray-800 dark:text-gray-200 text-base sm:text-lg leading-relaxed"><div class=bio-text><p>Computer scientist, mathematician and engineer with 12 years of experience spanning academic
+research, startup founding, and technical leadership. Specializes in program
+analysis, formal verification, and software security, with a track record of
+translating deep theoretical work into production tools and commercial products.</p><p>During my PhD I developed highly precise and efficient static data-flow and pointer
+analysis algorithms (Boomerang, IDEal, Synchronized Pushdown Systems). Since then, I&rsquo;ve
+carried that research into industry: building static analysis tooling at
+<a href=https://www.iem.fraunhofer.de/en.html target=_blank rel=noopener>Fraunhofer</a>, founding <a href=https://www.codeshield.io/ target=_blank rel=noopener>CodeShield</a>
+to tackle cloud IAM security, and, until recently, pushing the limits of formal verification
+as R&amp;D Director at <a href=https://www.certora.com/ target=_blank rel=noopener>Certora</a> in the blockchain ecosystem.</p><p>My current personal interest is in foundational computer science and interactive theorem proving with <a href=https://lean-lang.org/ target=_blank rel=noopener>Lean</a>.</p></div></div></div><div class=mb-16><a href=/uploads/resume.pdf target=_blank rel=noopener class="inline-flex items-center px-8 py-4 bg-gradient-to-r from-primary-600 to-secondary-600 hover:from-primary-700 hover:to-secondary-700 text-white font-bold text-lg rounded-xl shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300"><svg class="w-5 h-5 mr-3" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.5 14.25v-2.625A3.375 3.375.0 0016.125 8.25h-1.5A1.125 1.125.0 0113.5 7.125v-1.5A3.375 3.375.0 0010.125 2.25H8.25m.75 12 3 3m0 0 3-3m-3 3v-6m-1.5-9H5.625c-.621.0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621.0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9"/></svg>
+Download CV</a></div><div class=mb-16><div class="flex items-center gap-4 mb-8"><div class="flex-shrink-0 w-12 h-12 bg-primary-100 dark:bg-primary-900/50 rounded-full flex items-center justify-center"><svg class="w-6 h-6 text-primary-600 dark:text-primary-400" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.26 10.147a60 60 0 00-.491 6.347A48.6 48.6.0 0112 20.904a48.6 48.6.0 018.232-4.41 61 61 0 00-.491-6.347m-15.482.0a51 51 0 00-2.658-.813A60 60 0 0112 3.493a60 60 0 0110.399 5.84q-1.345.372-2.658.814m-15.482.0A51 51 0 0112 13.489a50.7 50.7.0 017.74-3.342M6.75 15a.75.75.0 100-1.5.75.75.0 000 1.5m0 0v-3.675A55 55 0 0112 8.443m-7.007 11.55A5.98 5.98.0 006.75 15.75v-1.5"/></svg></div><h3 class="text-xl sm:text-2xl lg:text-3xl font-bold text-gray-900 dark:text-white tracking-tight">Education</h3></div><div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6"><div class="group h-full flex flex-col bg-gradient-to-br from-white/90 to-primary-50/30 dark:from-gray-800/90 dark:to-primary-900/20 rounded-xl p-6 shadow-md hover:shadow-xl transition-all duration-300 border border-transparent hover:border-primary-200 dark:hover:border-primary-800 backdrop-blur-md"><div class="flex gap-4"><div class="flex-shrink-0 w-12 h-12 bg-white dark:bg-gray-800 ring-1 ring-gray-200 dark:ring-gray-700 rounded-full flex items-center justify-center shadow-md"><svg class="w-6 h-6 text-primary-600 dark:text-primary-400" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.26 10.147a60 60 0 00-.491 6.347A48.6 48.6.0 0112 20.904a48.6 48.6.0 018.232-4.41 61 61 0 00-.491-6.347m-15.482.0a51 51 0 00-2.658-.813A60 60 0 0112 3.493a60 60 0 0110.399 5.84q-1.345.372-2.658.814m-15.482.0A51 51 0 0112 13.489a50.7 50.7.0 017.74-3.342M6.75 15a.75.75.0 100-1.5.75.75.0 000 1.5m0 0v-3.675A55 55 0 0112 8.443m-7.007 11.55A5.98 5.98.0 006.75 15.75v-1.5"/></svg></div><div class="flex-1 flex-grow"><p class="text-xl font-bold text-gray-900 dark:text-white group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors">PhD in Computer Science (Dr. rer. nat.)</p><p class="text-gray-700 dark:text-gray-300 text-base">Paderborn University</p></div></div></div><div class="group h-full flex flex-col bg-gradient-to-br from-white/90 to-primary-50/30 dark:from-gray-800/90 dark:to-primary-900/20 rounded-xl p-6 shadow-md hover:shadow-xl transition-all duration-300 border border-transparent hover:border-primary-200 dark:hover:border-primary-800 backdrop-blur-md"><div class="flex gap-4"><div class="flex-shrink-0 w-12 h-12 bg-white dark:bg-gray-800 ring-1 ring-gray-200 dark:ring-gray-700 rounded-full flex items-center justify-center shadow-md"><svg class="w-6 h-6 text-primary-600 dark:text-primary-400" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.26 10.147a60 60 0 00-.491 6.347A48.6 48.6.0 0112 20.904a48.6 48.6.0 018.232-4.41 61 61 0 00-.491-6.347m-15.482.0a51 51 0 00-2.658-.813A60 60 0 0112 3.493a60 60 0 0110.399 5.84q-1.345.372-2.658.814m-15.482.0A51 51 0 0112 13.489a50.7 50.7.0 017.74-3.342M6.75 15a.75.75.0 100-1.5.75.75.0 000 1.5m0 0v-3.675A55 55 0 0112 8.443m-7.007 11.55A5.98 5.98.0 006.75 15.75v-1.5"/></svg></div><div class="flex-1 flex-grow"><p class="text-xl font-bold text-gray-900 dark:text-white group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors">Master of Science in Mathematics with Specialisation in Computer Science</p><p class="text-gray-700 dark:text-gray-300 text-base">Technical University of Darmstadt</p></div></div></div><div class="group h-full flex flex-col bg-gradient-to-br from-white/90 to-primary-50/30 dark:from-gray-800/90 dark:to-primary-900/20 rounded-xl p-6 shadow-md hover:shadow-xl transition-all duration-300 border border-transparent hover:border-primary-200 dark:hover:border-primary-800 backdrop-blur-md"><div class="flex gap-4"><div class="flex-shrink-0 w-12 h-12 bg-white dark:bg-gray-800 ring-1 ring-gray-200 dark:ring-gray-700 rounded-full flex items-center justify-center shadow-md"><svg class="w-6 h-6 text-primary-600 dark:text-primary-400" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.26 10.147a60 60 0 00-.491 6.347A48.6 48.6.0 0112 20.904a48.6 48.6.0 018.232-4.41 61 61 0 00-.491-6.347m-15.482.0a51 51 0 00-2.658-.813A60 60 0 0112 3.493a60 60 0 0110.399 5.84q-1.345.372-2.658.814m-15.482.0A51 51 0 0112 13.489a50.7 50.7.0 017.74-3.342M6.75 15a.75.75.0 100-1.5.75.75.0 000 1.5m0 0v-3.675A55 55 0 0112 8.443m-7.007 11.55A5.98 5.98.0 006.75 15.75v-1.5"/></svg></div><div class="flex-1 flex-grow"><p class="text-xl font-bold text-gray-900 dark:text-white group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors">Bachelor of Science in Mathematics</p><p class="text-gray-700 dark:text-gray-300 text-base">Johannes Gutenberg University of Mainz</p></div></div></div></div></div><div><div class="flex items-center gap-4 mb-8"><div class="flex-shrink-0 w-12 h-12 bg-primary-100 dark:bg-primary-900/50 rounded-full flex items-center justify-center"><svg class="w-6 h-6 text-primary-600 dark:text-primary-400" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5.0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5.0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5.0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5.0 00-3.09 3.09m8.445-7.188L18 9.75l-.259-1.035a3.38 3.38.0 00-2.455-2.456L14.25 6l1.036-.259a3.38 3.38.0 002.455-2.456L18 2.25l.259 1.035a3.38 3.38.0 002.456 2.456L21.75 6l-1.035.259a3.38 3.38.0 00-2.456 2.456m-1.365 11.852L16.5 21.75l-.394-1.183a2.25 2.25.0 00-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25.0 001.423-1.423l.394-1.183.394 1.183a2.25 2.25.0 001.423 1.423l1.183.394-1.183.394a2.25 2.25.0 00-1.423 1.423"/></svg></div><h3 class="text-xl font-bold text-gray-900 dark:text-white tracking-tight">Interests</h3></div><div class="flex flex-wrap gap-3"><span class="inline-block bg-primary-50 dark:bg-gray-800 text-primary-800 dark:text-primary-200 text-base font-medium px-4 py-2 rounded-full border border-primary-200/50 dark:border-primary-800/50
+hover:bg-primary-100
+dark:hover:bg-primary-500 dark:hover:text-gray-900 dark:hover:border-primary-500
+transition-all duration-200 cursor-default">Program Analysis
+</span><span class="inline-block bg-primary-50 dark:bg-gray-800 text-primary-800 dark:text-primary-200 text-base font-medium px-4 py-2 rounded-full border border-primary-200/50 dark:border-primary-800/50
+hover:bg-primary-100
+dark:hover:bg-primary-500 dark:hover:text-gray-900 dark:hover:border-primary-500
+transition-all duration-200 cursor-default">Formal Verification
+</span><span class="inline-block bg-primary-50 dark:bg-gray-800 text-primary-800 dark:text-primary-200 text-base font-medium px-4 py-2 rounded-full border border-primary-200/50 dark:border-primary-800/50
+hover:bg-primary-100
+dark:hover:bg-primary-500 dark:hover:text-gray-900 dark:hover:border-primary-500
+transition-all duration-200 cursor-default">Software Security
+</span><span class="inline-block bg-primary-50 dark:bg-gray-800 text-primary-800 dark:text-primary-200 text-base font-medium px-4 py-2 rounded-full border border-primary-200/50 dark:border-primary-800/50
+hover:bg-primary-100
+dark:hover:bg-primary-500 dark:hover:text-gray-900 dark:hover:border-primary-500
+transition-all duration-200 cursor-default">Pointer & Data-Flow Analysis
+</span><span class="inline-block bg-primary-50 dark:bg-gray-800 text-primary-800 dark:text-primary-200 text-base font-medium px-4 py-2 rounded-full border border-primary-200/50 dark:border-primary-800/50
+hover:bg-primary-100
+dark:hover:bg-primary-500 dark:hover:text-gray-900 dark:hover:border-primary-500
+transition-all duration-200 cursor-default">Cryptography
+</span><span class="inline-block bg-primary-50 dark:bg-gray-800 text-primary-800 dark:text-primary-200 text-base font-medium px-4 py-2 rounded-full border border-primary-200/50 dark:border-primary-800/50
+hover:bg-primary-100
+dark:hover:bg-primary-500 dark:hover:text-gray-900 dark:hover:border-primary-500
+transition-all duration-200 cursor-default">Theorem Proving</span></div></div></div></div></div></div></section><section id=experience class="relative isolate hbb-section blox-_"><div class=home-section-bg></div><div class="mx-auto w-full max-w-4xl px-4 sm:px-6 lg:px-8"><div class="flex flex-col gap-16"><div class=w-full><h2 class="mb-10 text-3xl font-bold text-gray-900 dark:text-white text-center">Experience</h2><div class=relative><div class="absolute left-4 sm:left-6 top-0 bottom-0 w-0.5 bg-gradient-to-b from-primary-500 via-primary-400 to-primary-600/50"></div><div class=space-y-8><div class="group relative pl-12 sm:pl-16"><div class="absolute left-0 sm:left-2 top-6 flex items-center justify-center"><div class=relative><div class="absolute inset-0 w-8 h-8 bg-primary-500/30 rounded-full blur-md group-hover:bg-primary-500/50 transition-all duration-300"></div><div class="relative w-8 h-8 bg-white dark:bg-gray-900 border-2 border-primary-500 rounded-full flex items-center justify-center group-hover:border-primary-400 group-hover:scale-110 transition-all duration-300"><svg fill="currentColor" viewBox="0 0 256 256" class="w-4 h-4 text-primary-600 dark:text-primary-400"><path d="M216 56H176V48a24 24 0 00-24-24H104A24 24 0 0080 48v8H40A16 16 0 0024 72V2e2a16 16 0 0016 16H216a16 16 0 0016-16V72A16 16 0 00216 56zM96 48a8 8 0 018-8h48a8 8 0 018 8v8H96zM216 72v41.61A184 184 0 01128 136a184.07 184.07.0 01-88-22.38V72zm0 128H40V131.64A200.19 200.19.0 00128 152a200.25 200.25.0 0088-20.37V2e2zM104 112a8 8 0 018-8h32a8 8 0 010 16H112a8 8 0 01-8-8z"/></svg></div></div></div><div class="relative bg-white dark:bg-white/[0.02] backdrop-blur-sm rounded-xl border border-gray-200 dark:border-white/[0.06] p-6 hover:bg-gray-50 dark:hover:bg-white/[0.04] hover:border-primary-300 dark:hover:border-primary-500/30 transition-all duration-300 group-hover:translate-x-1 shadow-sm dark:shadow-none"><div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2 mb-3"><div><h3 class="text-xl font-bold text-gray-900 dark:text-white group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors">R&amp;D Director (since Dec 2023, initially hired as Senior Software Engineer)</h3><p class="text-primary-600 dark:text-primary-400 font-medium mt-1">Certora Ltd</p></div><div class="flex items-center gap-2 text-sm text-gray-500 dark:text-gray-400 shrink-0"><svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5A2 2 0 003 7v12a2 2 0 002 2z"/></svg>
+<time>August 2023 –
+July 2026</time></div></div><div class="prose dark:prose-invert max-w-none text-gray-600 dark:text-gray-400 leading-relaxed"><p>Certora provides security audits and automated formal verification for web3 protocols.
+With the <a href=https://github.com/Certora/CertoraProver target=_blank rel=noopener>&ldquo;Prover&rdquo;</a>, Certora builds a product that uses SMT solvers to mathematically
+verify the implementation of smart contracts.</p><ul><li>Leading a teams of compiler and software engineers to enhance the Prover
+across different blockchain ecosystems (Ethereum, Stellar, Solana)</li><li>Contributed to the Prover and to Certora&rsquo;s specification language (CVL and CVLR):
+added support for strong invariant logic, lifted LLVM debug information to present
+counterexamples in IDEs, implemented a program interpreter over the IR, and worked
+on LLM-based spec generation</li><li>Delivered hands-on Certora Prover workshops at TrustX 2023 (Istanbul) and Meridian
+2024 (London), introducing developers to formal verification techniques for
+smart contract security</li></ul></div></div></div><div class="group relative pl-12 sm:pl-16"><div class="absolute left-0 sm:left-2 top-6 flex items-center justify-center"><div class=relative><div class="absolute inset-0 w-8 h-8 bg-primary-500/30 rounded-full blur-md group-hover:bg-primary-500/50 transition-all duration-300"></div><div class="relative w-8 h-8 bg-white dark:bg-gray-900 border-2 border-primary-500 rounded-full flex items-center justify-center group-hover:border-primary-400 group-hover:scale-110 transition-all duration-300"><svg fill="currentColor" viewBox="0 0 256 256" class="w-4 h-4 text-primary-600 dark:text-primary-400"><path d="M216 56H176V48a24 24 0 00-24-24H104A24 24 0 0080 48v8H40A16 16 0 0024 72V2e2a16 16 0 0016 16H216a16 16 0 0016-16V72A16 16 0 00216 56zM96 48a8 8 0 018-8h48a8 8 0 018 8v8H96zM216 72v41.61A184 184 0 01128 136a184.07 184.07.0 01-88-22.38V72zm0 128H40V131.64A200.19 200.19.0 00128 152a200.25 200.25.0 0088-20.37V2e2zM104 112a8 8 0 018-8h32a8 8 0 010 16H112a8 8 0 01-8-8z"/></svg></div></div></div><div class="relative bg-white dark:bg-white/[0.02] backdrop-blur-sm rounded-xl border border-gray-200 dark:border-white/[0.06] p-6 hover:bg-gray-50 dark:hover:bg-white/[0.04] hover:border-primary-300 dark:hover:border-primary-500/30 transition-all duration-300 group-hover:translate-x-1 shadow-sm dark:shadow-none"><div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2 mb-3"><div><h3 class="text-xl font-bold text-gray-900 dark:text-white group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors">CEO & Co-Founder</h3><p class="text-primary-600 dark:text-primary-400 font-medium mt-1">CodeShield GmbH</p></div><div class="flex items-center gap-2 text-sm text-gray-500 dark:text-gray-400 shrink-0"><svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5A2 2 0 003 7v12a2 2 0 002 2z"/></svg>
+<time>November 2019 –
+June 2023</time></div></div><div class="prose dark:prose-invert max-w-none text-gray-600 dark:text-gray-400 leading-relaxed"><p>CodeShield is a Software-as-a-Service that detects and fixes cloud security
+vulnerabilities (Gartner terms: CIEM, CNAPP, CSPM).</p><ul><li>Acquiring and implementing proof-of-concepts with national and international clients</li><li>Securing funding to build and grow the team</li><li>Leading customer research, defining the product vision, iterating on MVP: discover
+IAM permission misconfigurations and demonstrate exploitable attack vectors (IAM
+privilege escalations)</li></ul></div></div></div><div class="group relative pl-12 sm:pl-16"><div class="absolute left-0 sm:left-2 top-6 flex items-center justify-center"><div class=relative><div class="absolute inset-0 w-8 h-8 bg-primary-500/30 rounded-full blur-md group-hover:bg-primary-500/50 transition-all duration-300"></div><div class="relative w-8 h-8 bg-white dark:bg-gray-900 border-2 border-primary-500 rounded-full flex items-center justify-center group-hover:border-primary-400 group-hover:scale-110 transition-all duration-300"><svg fill="currentColor" viewBox="0 0 256 256" class="w-4 h-4 text-primary-600 dark:text-primary-400"><path d="M216 56H176V48a24 24 0 00-24-24H104A24 24 0 0080 48v8H40A16 16 0 0024 72V2e2a16 16 0 0016 16H216a16 16 0 0016-16V72A16 16 0 00216 56zM96 48a8 8 0 018-8h48a8 8 0 018 8v8H96zM216 72v41.61A184 184 0 01128 136a184.07 184.07.0 01-88-22.38V72zm0 128H40V131.64A200.19 200.19.0 00128 152a200.25 200.25.0 0088-20.37V2e2zM104 112a8 8 0 018-8h32a8 8 0 010 16H112a8 8 0 01-8-8z"/></svg></div></div></div><div class="relative bg-white dark:bg-white/[0.02] backdrop-blur-sm rounded-xl border border-gray-200 dark:border-white/[0.06] p-6 hover:bg-gray-50 dark:hover:bg-white/[0.04] hover:border-primary-300 dark:hover:border-primary-500/30 transition-all duration-300 group-hover:translate-x-1 shadow-sm dark:shadow-none"><div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2 mb-3"><div><h3 class="text-xl font-bold text-gray-900 dark:text-white group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors">Senior Expert & Research Associate</h3><p class="text-primary-600 dark:text-primary-400 font-medium mt-1">Fraunhofer IEM - Institute for Mechatronic Systems Design</p></div><div class="flex items-center gap-2 text-sm text-gray-500 dark:text-gray-400 shrink-0"><svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5A2 2 0 003 7v12a2 2 0 002 2z"/></svg>
+<time>March 2017 –
+October 2019</time></div></div><div class="prose dark:prose-invert max-w-none text-gray-600 dark:text-gray-400 leading-relaxed"><p>The department of Software Engineering and IT Security at Fraunhofer IEM develops and
+researches methods and tools for secure development, maintenance, and operation of
+software-intensive systems.</p><ul><li>Research on efficient and precise program analysis with focus on security (pointer
+and taint analyses)</li><li>Development of the IDE plugin Eclipse CogniCrypt: a spell checker for developers
+detecting insecure usages of cryptographic APIs, presented at EclipseCon Europe
+2018 and heise devSec 2019</li><li>Integration of static code analyses with industry partners (SAST & SCA for DevOps)</li></ul></div></div></div><div class="group relative pl-12 sm:pl-16"><div class="absolute left-0 sm:left-2 top-6 flex items-center justify-center"><div class=relative><div class="absolute inset-0 w-8 h-8 bg-primary-500/30 rounded-full blur-md group-hover:bg-primary-500/50 transition-all duration-300"></div><div class="relative w-8 h-8 bg-white dark:bg-gray-900 border-2 border-primary-500 rounded-full flex items-center justify-center group-hover:border-primary-400 group-hover:scale-110 transition-all duration-300"><svg fill="currentColor" viewBox="0 0 256 256" class="w-4 h-4 text-primary-600 dark:text-primary-400"><path d="M216 56H176V48a24 24 0 00-24-24H104A24 24 0 0080 48v8H40A16 16 0 0024 72V2e2a16 16 0 0016 16H216a16 16 0 0016-16V72A16 16 0 00216 56zM96 48a8 8 0 018-8h48a8 8 0 018 8v8H96zM216 72v41.61A184 184 0 01128 136a184.07 184.07.0 01-88-22.38V72zm0 128H40V131.64A200.19 200.19.0 00128 152a200.25 200.25.0 0088-20.37V2e2zM104 112a8 8 0 018-8h32a8 8 0 010 16H112a8 8 0 01-8-8z"/></svg></div></div></div><div class="relative bg-white dark:bg-white/[0.02] backdrop-blur-sm rounded-xl border border-gray-200 dark:border-white/[0.06] p-6 hover:bg-gray-50 dark:hover:bg-white/[0.04] hover:border-primary-300 dark:hover:border-primary-500/30 transition-all duration-300 group-hover:translate-x-1 shadow-sm dark:shadow-none"><div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2 mb-3"><div><h3 class="text-xl font-bold text-gray-900 dark:text-white group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors">Research Intern</h3><p class="text-primary-600 dark:text-primary-400 font-medium mt-1">Oracle</p></div><div class="flex items-center gap-2 text-sm text-gray-500 dark:text-gray-400 shrink-0"><svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5A2 2 0 003 7v12a2 2 0 002 2z"/></svg>
+<time>August 2016 –
+January 2017</time></div></div><div class="prose dark:prose-invert max-w-none text-gray-600 dark:text-gray-400 leading-relaxed"><p>Oracle Labs Brisbane is one of Oracle&rsquo;s eight research centers. The team in Brisbane
+develops program analysis technologies for internal use (Oracle Parfait).</p><ul><li>Research stay to work on existing data flow and code analyses solution</li><li>Prototyping and implementing concepts for efficient program analysis based on
+soufflé (Datalog-based program analysis)</li><li>C++ implementation for points-to summaries on top of soufflé</li></ul></div></div></div><div class="group relative pl-12 sm:pl-16"><div class="absolute left-0 sm:left-2 top-6 flex items-center justify-center"><div class=relative><div class="absolute inset-0 w-8 h-8 bg-primary-500/30 rounded-full blur-md group-hover:bg-primary-500/50 transition-all duration-300"></div><div class="relative w-8 h-8 bg-white dark:bg-gray-900 border-2 border-primary-500 rounded-full flex items-center justify-center group-hover:border-primary-400 group-hover:scale-110 transition-all duration-300"><svg fill="currentColor" viewBox="0 0 256 256" class="w-4 h-4 text-primary-600 dark:text-primary-400"><path d="M216 56H176V48a24 24 0 00-24-24H104A24 24 0 0080 48v8H40A16 16 0 0024 72V2e2a16 16 0 0016 16H216a16 16 0 0016-16V72A16 16 0 00216 56zM96 48a8 8 0 018-8h48a8 8 0 018 8v8H96zM216 72v41.61A184 184 0 01128 136a184.07 184.07.0 01-88-22.38V72zm0 128H40V131.64A200.19 200.19.0 00128 152a200.25 200.25.0 0088-20.37V2e2zM104 112a8 8 0 018-8h32a8 8 0 010 16H112a8 8 0 01-8-8z"/></svg></div></div></div><div class="relative bg-white dark:bg-white/[0.02] backdrop-blur-sm rounded-xl border border-gray-200 dark:border-white/[0.06] p-6 hover:bg-gray-50 dark:hover:bg-white/[0.04] hover:border-primary-300 dark:hover:border-primary-500/30 transition-all duration-300 group-hover:translate-x-1 shadow-sm dark:shadow-none"><div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2 mb-3"><div><h3 class="text-xl font-bold text-gray-900 dark:text-white group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors">Research Associate</h3><p class="text-primary-600 dark:text-primary-400 font-medium mt-1">Fraunhofer SIT - Institute for Secure Information Technology</p></div><div class="flex items-center gap-2 text-sm text-gray-500 dark:text-gray-400 shrink-0"><svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5A2 2 0 003 7v12a2 2 0 002 2z"/></svg>
+<time>March 2014 –
+July 2016</time></div></div><div class="prose dark:prose-invert max-w-none text-gray-600 dark:text-gray-400 leading-relaxed"><ul><li>Researching and prototyping program and data-flow analyses (pointer and taint
+analyses)</li><li>Security analysis of the source code of TrueCrypt using Coverity Scan and Fortify,
+commissioned by the German Federal Office for Information Security (BSI)</li><li>Security & pen testing of web applications using OWASP ZAP & Wireshark</li></ul></div></div></div></div></div></div><div class=w-full><h2 class="mb-10 text-3xl font-bold text-gray-900 dark:text-white text-center">Education</h2><div class=relative><div class="absolute left-4 sm:left-6 top-0 bottom-0 w-0.5 bg-gradient-to-b from-secondary-500 via-secondary-400 to-secondary-600/50"></div><div class=space-y-8><div class="group relative pl-12 sm:pl-16"><div class="absolute left-0 sm:left-2 top-6 flex items-center justify-center"><div class=relative><div class="absolute inset-0 w-8 h-8 bg-secondary-500/30 rounded-full blur-md group-hover:bg-secondary-500/50 transition-all duration-300"></div><div class="relative w-8 h-8 bg-white dark:bg-gray-900 border-2 border-secondary-500 rounded-full flex items-center justify-center group-hover:border-secondary-400 group-hover:scale-110 transition-all duration-300"><svg fill="currentColor" viewBox="0 0 256 256" class="w-4 h-4 text-secondary-600 dark:text-secondary-400"><path d="M251.76 88.94l-120-64a8 8 0 00-7.52.0l-120 64a8 8 0 000 14.12L32 117.87v48.42a15.91 15.91.0 004.06 10.65C49.16 191.53 78.51 216 128 216a130 130 0 0048-8.76V240a8 8 0 0016 0V199.51a115.63 115.63.0 0027.94-22.57A15.91 15.91.0 00224 166.29V117.87l27.76-14.81a8 8 0 000-14.12zM128 2e2c-43.27.0-68.72-21.14-80-33.71V126.4l76.24 40.66a8 8 0 007.52.0L176 143.47v46.34C163.4 195.69 147.52 2e2 128 2e2zm80-33.75a97.83 97.83.0 01-16 14.25V134.93l16-8.53zm-20-47.31-.22-.13-56-29.87a8 8 0 00-7.52 14.12L171 128l-43 22.93L25 96 128 41.07 231 96z"/></svg></div></div></div><div class="relative bg-white dark:bg-white/[0.02] backdrop-blur-sm rounded-xl border border-gray-200 dark:border-white/[0.06] p-6 hover:bg-gray-50 dark:hover:bg-white/[0.04] hover:border-secondary-300 dark:hover:border-secondary-500/30 transition-all duration-300 group-hover:translate-x-1 shadow-sm dark:shadow-none"><div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2 mb-3"><div><h3 class="text-xl font-bold text-gray-900 dark:text-white group-hover:text-secondary-600 dark:group-hover:text-secondary-400 transition-colors">PhD in Computer Science (Dr. rer. nat.)</h3><p class="text-secondary-600 dark:text-secondary-400 font-medium mt-1">Paderborn University</p></div><div class="flex items-center gap-2 text-sm text-gray-500 dark:text-gray-400 shrink-0"><svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5A2 2 0 003 7v12a2 2 0 002 2z"/></svg>
+<time>January 2019</time></div></div><div class="prose dark:prose-invert max-w-none text-gray-600 dark:text-gray-400 leading-relaxed">Dissertation: <em>Synchronized Pushdown Systems for Pointer and Data-Flow Analysis</em>.
+Grade: summa cum laude (received 3 awards).</div></div></div><div class="group relative pl-12 sm:pl-16"><div class="absolute left-0 sm:left-2 top-6 flex items-center justify-center"><div class=relative><div class="absolute inset-0 w-8 h-8 bg-secondary-500/30 rounded-full blur-md group-hover:bg-secondary-500/50 transition-all duration-300"></div><div class="relative w-8 h-8 bg-white dark:bg-gray-900 border-2 border-secondary-500 rounded-full flex items-center justify-center group-hover:border-secondary-400 group-hover:scale-110 transition-all duration-300"><svg fill="currentColor" viewBox="0 0 256 256" class="w-4 h-4 text-secondary-600 dark:text-secondary-400"><path d="M251.76 88.94l-120-64a8 8 0 00-7.52.0l-120 64a8 8 0 000 14.12L32 117.87v48.42a15.91 15.91.0 004.06 10.65C49.16 191.53 78.51 216 128 216a130 130 0 0048-8.76V240a8 8 0 0016 0V199.51a115.63 115.63.0 0027.94-22.57A15.91 15.91.0 00224 166.29V117.87l27.76-14.81a8 8 0 000-14.12zM128 2e2c-43.27.0-68.72-21.14-80-33.71V126.4l76.24 40.66a8 8 0 007.52.0L176 143.47v46.34C163.4 195.69 147.52 2e2 128 2e2zm80-33.75a97.83 97.83.0 01-16 14.25V134.93l16-8.53zm-20-47.31-.22-.13-56-29.87a8 8 0 00-7.52 14.12L171 128l-43 22.93L25 96 128 41.07 231 96z"/></svg></div></div></div><div class="relative bg-white dark:bg-white/[0.02] backdrop-blur-sm rounded-xl border border-gray-200 dark:border-white/[0.06] p-6 hover:bg-gray-50 dark:hover:bg-white/[0.04] hover:border-secondary-300 dark:hover:border-secondary-500/30 transition-all duration-300 group-hover:translate-x-1 shadow-sm dark:shadow-none"><div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2 mb-3"><div><h3 class="text-xl font-bold text-gray-900 dark:text-white group-hover:text-secondary-600 dark:group-hover:text-secondary-400 transition-colors">Master of Science in Mathematics with Specialisation in Computer Science</h3><p class="text-secondary-600 dark:text-secondary-400 font-medium mt-1">Technical University of Darmstadt</p></div><div class="flex items-center gap-2 text-sm text-gray-500 dark:text-gray-400 shrink-0"><svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5A2 2 0 003 7v12a2 2 0 002 2z"/></svg>
+<time>September 2013</time></div></div><div class="prose dark:prose-invert max-w-none text-gray-600 dark:text-gray-400 leading-relaxed">Grade: 1.6</div></div></div><div class="group relative pl-12 sm:pl-16"><div class="absolute left-0 sm:left-2 top-6 flex items-center justify-center"><div class=relative><div class="absolute inset-0 w-8 h-8 bg-secondary-500/30 rounded-full blur-md group-hover:bg-secondary-500/50 transition-all duration-300"></div><div class="relative w-8 h-8 bg-white dark:bg-gray-900 border-2 border-secondary-500 rounded-full flex items-center justify-center group-hover:border-secondary-400 group-hover:scale-110 transition-all duration-300"><svg fill="currentColor" viewBox="0 0 256 256" class="w-4 h-4 text-secondary-600 dark:text-secondary-400"><path d="M251.76 88.94l-120-64a8 8 0 00-7.52.0l-120 64a8 8 0 000 14.12L32 117.87v48.42a15.91 15.91.0 004.06 10.65C49.16 191.53 78.51 216 128 216a130 130 0 0048-8.76V240a8 8 0 0016 0V199.51a115.63 115.63.0 0027.94-22.57A15.91 15.91.0 00224 166.29V117.87l27.76-14.81a8 8 0 000-14.12zM128 2e2c-43.27.0-68.72-21.14-80-33.71V126.4l76.24 40.66a8 8 0 007.52.0L176 143.47v46.34C163.4 195.69 147.52 2e2 128 2e2zm80-33.75a97.83 97.83.0 01-16 14.25V134.93l16-8.53zm-20-47.31-.22-.13-56-29.87a8 8 0 00-7.52 14.12L171 128l-43 22.93L25 96 128 41.07 231 96z"/></svg></div></div></div><div class="relative bg-white dark:bg-white/[0.02] backdrop-blur-sm rounded-xl border border-gray-200 dark:border-white/[0.06] p-6 hover:bg-gray-50 dark:hover:bg-white/[0.04] hover:border-secondary-300 dark:hover:border-secondary-500/30 transition-all duration-300 group-hover:translate-x-1 shadow-sm dark:shadow-none"><div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2 mb-3"><div><h3 class="text-xl font-bold text-gray-900 dark:text-white group-hover:text-secondary-600 dark:group-hover:text-secondary-400 transition-colors">Bachelor of Science in Mathematics</h3><p class="text-secondary-600 dark:text-secondary-400 font-medium mt-1">Johannes Gutenberg University of Mainz</p></div><div class="flex items-center gap-2 text-sm text-gray-500 dark:text-gray-400 shrink-0"><svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5A2 2 0 003 7v12a2 2 0 002 2z"/></svg>
+<time>March 2011</time></div></div><div class="prose dark:prose-invert max-w-none text-gray-600 dark:text-gray-400 leading-relaxed">Grade: 1.6</div></div></div></div></div></div></div></div></section><section id=section-resume-skills class="relative isolate hbb-section blox-_"><div class=home-section-bg></div><div class="flex flex-col items-center max-w-prose mx-auto gap-3 justify-center"><div class="mb-6 text-3xl font-bold text-gray-900 dark:text-white">Skills</div></div><div class="grid grid-cols-1 md:grid-cols-2 items-start max-w-prose mx-auto gap-3 px-6 md:px-0"><div class=w-full><div class="mb-5 text-xl font-bold text-gray-900 dark:text-white">Programming Languages</div><div class=skills-content><span class="skills-name text-gray-700 dark:text-gray-300">Kotlin / Java</span><div class=skills-wrapper><div class=skills-percent style=width:100%></div></div></div><div class=skills-content><span class="skills-name text-gray-700 dark:text-gray-300">TypeScript / JavaScript</span><div class=skills-wrapper><div class=skills-percent style=width:100%></div></div></div><div class=skills-content><span class="skills-name text-gray-700 dark:text-gray-300">Rust</span><div class=skills-wrapper><div class=skills-percent style=width:80%></div></div></div><div class=skills-content><span class="skills-name text-gray-700 dark:text-gray-300">Python</span><div class=skills-wrapper><div class=skills-percent style=width:80%></div></div></div><div class=skills-content><span class="skills-name text-gray-700 dark:text-gray-300">C/C++</span><div class=skills-wrapper><div class=skills-percent style=width:40%></div></div></div></div><div class=w-full><div class="mb-5 text-xl font-bold text-gray-900 dark:text-white">Infrastructure</div><div class=skills-content><span class="skills-name text-gray-700 dark:text-gray-300">git</span><div class=skills-wrapper><div class=skills-percent style=width:100%></div></div></div><div class=skills-content><span class="skills-name text-gray-700 dark:text-gray-300">Package Managers (mvn / cargo / uv )</span><div class=skills-wrapper><div class=skills-percent style=width:100%></div></div></div><div class=skills-content><span class="skills-name text-gray-700 dark:text-gray-300">Docker</span><div class=skills-wrapper><div class=skills-percent style=width:80%></div></div></div><div class=skills-content><span class="skills-name text-gray-700 dark:text-gray-300">AWS</span><div class=skills-wrapper><div class=skills-percent style=width:60%></div></div></div></div><div class=w-full><div class="mb-5 text-xl font-bold text-gray-900 dark:text-white">Program Analysis & Verification Tooling</div><div class=skills-content><span class="skills-name text-gray-700 dark:text-gray-300">Soot</span><div class=skills-wrapper><div class=skills-percent style=width:100%></div></div></div><div class=skills-content><span class="skills-name text-gray-700 dark:text-gray-300">LLVM</span><div class=skills-wrapper><div class=skills-percent style=width:80%></div></div></div><div class=skills-content><span class="skills-name text-gray-700 dark:text-gray-300">Lean</span><div class=skills-wrapper><div class=skills-percent style=width:80%></div></div></div><div class=skills-content><span class="skills-name text-gray-700 dark:text-gray-300">Datalog / Soufflé</span><div class=skills-wrapper><div class=skills-percent style=width:80%></div></div></div><div class=skills-content><span class="skills-name text-gray-700 dark:text-gray-300">SMT Solving</span><div class=skills-wrapper><div class=skills-percent style=width:60%></div></div></div></div></div></section><section id=section-resume-awards class="relative isolate hbb-section blox-_"><div class=home-section-bg></div><div class="flex flex-col items-center max-w-prose mx-auto gap-3 justify-center"><div class="mb-6 text-3xl font-bold text-gray-900 dark:text-white">Awards</div><div class="w-full flex flex-col gap-6"><div class="w-full p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"><h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white flex items-center gap-2"><span class="inline-flex items-center justify-center w-7 h-7 text-primary-600 dark:text-primary-300"><svg class="w-6 h-6" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16.5 18.75h-9m9 0a3 3 0 013 3h-15a3 3 0 013-3m9 0v-3.375c0-.621-.503-1.125-1.125-1.125h-.871M7.5 18.75v-3.375c0-.621.504-1.125 1.125-1.125h.872m5.007.0H9.497m5.007.0a7.45 7.45.0 01-.982-3.172M9.497 14.25a7.45 7.45.0 00.981-3.172M5.25 4.236q-1.473.215-2.916.52A6 6 0 007.73 9.728M5.25 4.236V4.5c0 2.108.966 3.99 2.48 5.228M5.25 4.236V2.721C7.456 2.41 9.71 2.25 12 2.25s4.545.16 6.75.47v1.516M7.73 9.728a6.7 6.7.0 002.748 1.35m8.272-6.842V4.5c0 2.108-.966 3.99-2.48 5.228m2.48-5.492a46 46 0 012.916.52 6 6 0 01-5.395 4.972m0 0a6.7 6.7.0 01-2.749 1.35m0 0a6.8 6.8.0 01-3.044.0"/></svg>
+</span><span>Fraunhofer ICT Dissertation Award</span></h5><div class="block mb-3 text-sm font-normal leading-none text-gray-500 dark:text-gray-300">Fraunhofer ICT &#8729;
+January 2022</div></div><div class="w-full p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"><h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white flex items-center gap-2"><span class="inline-flex items-center justify-center w-7 h-7 text-primary-600 dark:text-primary-300"><svg class="w-6 h-6" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16.5 18.75h-9m9 0a3 3 0 013 3h-15a3 3 0 013-3m9 0v-3.375c0-.621-.503-1.125-1.125-1.125h-.871M7.5 18.75v-3.375c0-.621.504-1.125 1.125-1.125h.872m5.007.0H9.497m5.007.0a7.45 7.45.0 01-.982-3.172M9.497 14.25a7.45 7.45.0 00.981-3.172M5.25 4.236q-1.473.215-2.916.52A6 6 0 007.73 9.728M5.25 4.236V4.5c0 2.108.966 3.99 2.48 5.228M5.25 4.236V2.721C7.456 2.41 9.71 2.25 12 2.25s4.545.16 6.75.47v1.516M7.73 9.728a6.7 6.7.0 002.748 1.35m8.272-6.842V4.5c0 2.108-.966 3.99-2.48 5.228m2.48-5.492a46 46 0 012.916.52 6 6 0 01-5.395 4.972m0 0a6.7 6.7.0 01-2.749 1.35m0 0a6.8 6.8.0 01-3.044.0"/></svg>
+</span><span>Excellent Dissertation Award</span></h5><div class="block mb-3 text-sm font-normal leading-none text-gray-500 dark:text-gray-300">Presidium of the University of Paderborn &#8729;
+January 2019</div></div><div class="w-full p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"><h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white flex items-center gap-2"><span class="inline-flex items-center justify-center w-7 h-7 text-primary-600 dark:text-primary-300"><svg class="w-6 h-6" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16.5 18.75h-9m9 0a3 3 0 013 3h-15a3 3 0 013-3m9 0v-3.375c0-.621-.503-1.125-1.125-1.125h-.871M7.5 18.75v-3.375c0-.621.504-1.125 1.125-1.125h.872m5.007.0H9.497m5.007.0a7.45 7.45.0 01-.982-3.172M9.497 14.25a7.45 7.45.0 00.981-3.172M5.25 4.236q-1.473.215-2.916.52A6 6 0 007.73 9.728M5.25 4.236V4.5c0 2.108.966 3.99 2.48 5.228M5.25 4.236V2.721C7.456 2.41 9.71 2.25 12 2.25s4.545.16 6.75.47v1.516M7.73 9.728a6.7 6.7.0 002.748 1.35m8.272-6.842V4.5c0 2.108-.966 3.99-2.48 5.228m2.48-5.492a46 46 0 012.916.52 6 6 0 01-5.395 4.972m0 0a6.7 6.7.0 01-2.749 1.35m0 0a6.8 6.8.0 01-3.044.0"/></svg>
+</span><span>Ernst Denert Software-Engineering Award</span></h5><div class="block mb-3 text-sm font-normal leading-none text-gray-500 dark:text-gray-300">Ernst Denert Foundation &#8729;
+January 2019</div></div><div class="w-full p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"><h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white flex items-center gap-2"><span class="inline-flex items-center justify-center w-7 h-7 text-primary-600 dark:text-primary-300"><svg class="w-6 h-6" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16.5 18.75h-9m9 0a3 3 0 013 3h-15a3 3 0 013-3m9 0v-3.375c0-.621-.503-1.125-1.125-1.125h-.871M7.5 18.75v-3.375c0-.621.504-1.125 1.125-1.125h.872m5.007.0H9.497m5.007.0a7.45 7.45.0 01-.982-3.172M9.497 14.25a7.45 7.45.0 00.981-3.172M5.25 4.236q-1.473.215-2.916.52A6 6 0 007.73 9.728M5.25 4.236V4.5c0 2.108.966 3.99 2.48 5.228M5.25 4.236V2.721C7.456 2.41 9.71 2.25 12 2.25s4.545.16 6.75.47v1.516M7.73 9.728a6.7 6.7.0 002.748 1.35m8.272-6.842V4.5c0 2.108-.966 3.99-2.48 5.228m2.48-5.492a46 46 0 012.916.52 6 6 0 01-5.395 4.972m0 0a6.7 6.7.0 01-2.749 1.35m0 0a6.8 6.8.0 01-3.044.0"/></svg>
+</span><span>Distinguished Paper Award</span></h5><div class="block mb-3 text-sm font-normal leading-none text-gray-500 dark:text-gray-300">POPL 2019 &#8729;
+January 2019</div></div><div class="w-full p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"><h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white flex items-center gap-2"><span class="inline-flex items-center justify-center w-7 h-7 text-primary-600 dark:text-primary-300"><svg class="w-6 h-6" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16.5 18.75h-9m9 0a3 3 0 013 3h-15a3 3 0 013-3m9 0v-3.375c0-.621-.503-1.125-1.125-1.125h-.871M7.5 18.75v-3.375c0-.621.504-1.125 1.125-1.125h.872m5.007.0H9.497m5.007.0a7.45 7.45.0 01-.982-3.172M9.497 14.25a7.45 7.45.0 00.981-3.172M5.25 4.236q-1.473.215-2.916.52A6 6 0 007.73 9.728M5.25 4.236V4.5c0 2.108.966 3.99 2.48 5.228M5.25 4.236V2.721C7.456 2.41 9.71 2.25 12 2.25s4.545.16 6.75.47v1.516M7.73 9.728a6.7 6.7.0 002.748 1.35m8.272-6.842V4.5c0 2.108-.966 3.99-2.48 5.228m2.48-5.492a46 46 0 012.916.52 6 6 0 01-5.395 4.972m0 0a6.7 6.7.0 01-2.749 1.35m0 0a6.8 6.8.0 01-3.044.0"/></svg>
+</span><span>Artifact Evaluation Award</span></h5><div class="block mb-3 text-sm font-normal leading-none text-gray-500 dark:text-gray-300">POPL 2019 & ECOOP 2016 &#8729;
+January 2019</div><div class="mb-3 font-normal text-gray-500 dark:text-gray-400 prose">Awarded at both POPL 2019 and ECOOP 2016.</div></div></div></div></section><section id=section-resume-languages class="relative isolate hbb-section blox-_"><div class=home-section-bg></div><div class="flex flex-col items-center max-w-prose mx-auto gap-3 justify-center"><div class="mb-6 text-3xl font-bold text-gray-900 dark:text-white">Languages</div><div class="flex items-center flex-col lg:flex-row gap-y-10 lg:gap-y-0 lg:gap-x-8"><div class="flex flex-col items-center"><div class="flex items-center justify-center w-28 h-28"><svg class="transform -rotate-90" viewBox="0 0 288 288"><circle cx="145" cy="145" r="120" stroke="currentColor" stroke-width="30" fill="transparent" class="text-gray-200 dark:text-gray-700"/><circle cx="145" cy="145" r="120" stroke="currentColor" stroke-width="30" fill="transparent" class="text-primary-600 dark:text-primary-300" style="stroke-dasharray:calc(2 * 22/7 * 120);stroke-dashoffset:calc((2 * 22/7 * 120) - ((2 * 22/7 * 120) * 100/100))"/></svg>
+<span class="absolute text-3xl">100%</span></div><span class=text-1xl>German</span>
+<span class="text-sm text-gray-500 dark:text-gray-400 mt-1">Native</span></div><div class="flex flex-col items-center"><div class="flex items-center justify-center w-28 h-28"><svg class="transform -rotate-90" viewBox="0 0 288 288"><circle cx="145" cy="145" r="120" stroke="currentColor" stroke-width="30" fill="transparent" class="text-gray-200 dark:text-gray-700"/><circle cx="145" cy="145" r="120" stroke="currentColor" stroke-width="30" fill="transparent" class="text-primary-600 dark:text-primary-300" style="stroke-dasharray:calc(2 * 22/7 * 120);stroke-dashoffset:calc((2 * 22/7 * 120) - ((2 * 22/7 * 120) * 80/100))"/></svg>
+<span class="absolute text-3xl">80%</span></div><span class=text-1xl>English</span>
+<span class="text-sm text-gray-500 dark:text-gray-400 mt-1">Fluent</span></div></div></div></section><section id=papers class="relative isolate hbb-section blox-_"><div class=home-section-bg></div><div class="flex flex-col items-center max-w-prose mx-auto gap-3 justify-center px-6 md:px-0"><div class="mb-6 text-3xl font-bold text-gray-900 dark:text-white">Publications & Patents</div></div><div class="flex flex-col items-center px-6"><div class="mt-16 sm:mt-20 container max-w-3xl w-full"><div class="flex flex-col space-y-3"><div class="pub-list-item view-citation" style=margin-bottom:1rem><i class="far fa-file-alt pub-icon" aria-hidden=true></i>
+<span class="article-metadata li-cite-author"><span>Goran Piskachev</span>, <span><a href>Johannes Späth</a></span>, <span>Ingo Budde</span>, <span>Eric Bodden</span>
+</span>(2022).
+<strong>Fluently Specifying Taint-Flow Queries with FluentTQL</strong>.
+<em>ESE 2022</em>.</div><div class="pub-list-item view-citation" style=margin-bottom:1rem><i class="far fa-file-alt pub-icon" aria-hidden=true></i>
+<span class="article-metadata li-cite-author"><span>Sriteja Kummita</span>, <span>Goran Piskachev</span>, <span><a href>Johannes Späth</a></span>, <span>Eric Bodden</span>
+</span>(2021).
+<strong>Qualitative and Quantitative Analysis of Callgraph Algorithms for Python</strong>.
+<em>ICCQ 2021</em>.</div><div class="pub-list-item view-citation" style=margin-bottom:1rem><i class="far fa-file-alt pub-icon" aria-hidden=true></i>
+<span class="article-metadata li-cite-author"><span><a href>Johannes Späth</a></span>, <span>Karim Ali</span>, <span>Eric Bodden</span>
+</span>(2019).
+<strong>Context-, Flow- and Field-Sensitive Data-Flow Analysis using Synchronized Pushdown Systems</strong>.
+<em>POPL 2019</em>.</div><div class="pub-list-item view-citation" style=margin-bottom:1rem><i class="far fa-file-alt pub-icon" aria-hidden=true></i>
+<span class="article-metadata li-cite-author"><span>Linghui Luo</span>, <span>Eric Bodden</span>, <span><a href>Johannes Späth</a></span>
+</span>(2019).
+<strong>A Qualitative Analysis of Android Taint-Analysis Results</strong>.
+<em>ASE 2019</em>.</div><div class="pub-list-item view-citation" style=margin-bottom:1rem><i class="far fa-file-alt pub-icon" aria-hidden=true></i>
+<span class="article-metadata li-cite-author"><span>Goran Piskachev</span>, <span>Tobias Petrasch</span>, <span><a href>Johannes Späth</a></span>, <span>Eric Bodden</span>
+</span>(2019).
+<strong>AuthCheck: Program-State Analysis for Access-Control Vulnerabilities</strong>.
+<em>iFM 2019</em>.</div><div class="pub-list-item view-citation" style=margin-bottom:1rem><i class="far fa-file-alt pub-icon" aria-hidden=true></i>
+<span class="article-metadata li-cite-author"><span>Stefan Krüger</span>, <span><a href>Johannes Späth</a></span>, <span>Karim Ali</span>, <span>Eric Bodden</span>, <span>Mira Mezini</span>
+</span>(2019).
+<strong>CrySL: An Extensible Approach to Validating the Correct Usage of Cryptographic APIs</strong>.
+<em>TSE 2019</em>.</div><div class="pub-list-item view-citation" style=margin-bottom:1rem><i class="far fa-file-alt pub-icon" aria-hidden=true></i>
+<span class="article-metadata li-cite-author"><span><a href>Johannes Späth</a></span>, <span>Karim Ali</span>, <span>Eric Bodden</span>
+</span>(2017).
+<strong>IDEal: Efficient and Precise Alias-aware Data-Flow Analysis</strong>.
+<em>OOPSLA 2017</em>.</div><div class="pub-list-item view-citation" style=margin-bottom:1rem><i class="far fa-file-alt pub-icon" aria-hidden=true></i>
+<span class="article-metadata li-cite-author"><span><a href>Johannes Späth</a></span>, <span>Francois Gauthier</span>, <span>Padmanabhan Krishnan</span>
+</span>(2017).
+<strong>Modular Points-To Analysis</strong>.
+<em>Oracle International Corporation (Patent)</em>.</div><div class="pub-list-item view-citation" style=margin-bottom:1rem><i class="far fa-file-alt pub-icon" aria-hidden=true></i>
+<span class="article-metadata li-cite-author"><span><a href>Johannes Späth</a></span>, <span>Lisa Nguyen Quang Do</span>, <span>Karim Ali</span>, <span>Eric Bodden</span>
+</span>(2016).
+<strong>Boomerang: Demand-Driven Flow- and Context-Sensitive Pointer Analysis for Java</strong>.
+<em>ECOOP 2016</em>.</div><div class="pub-list-item view-citation" style=margin-bottom:1rem><i class="far fa-file-alt pub-icon" aria-hidden=true></i>
+<span class="article-metadata li-cite-author"><span>Johannes Lerch</span>, <span><a href>Johannes Späth</a></span>, <span>Eric Bodden</span>, <span>Mira Mezini</span>
+</span>(2015).
+<strong>Access-Path Abstraction: Scaling Field-Sensitive Data-Flow Analysis with Unbounded Access Paths</strong>.
+<em>ASE 2015</em>.</div><div class="pub-list-item view-citation" style=margin-bottom:1rem><i class="far fa-file-alt pub-icon" aria-hidden=true></i>
+<span class="article-metadata li-cite-author"><span>Mauro Baluda</span>, <span>Andreas Fuchs</span>, <span>Philipp Holzinger</span>, <span>Lisa Nguyen Quang Do</span>, <span>Lotfi ben Othmane</span>, <span>Andreas Poller</span>, <span>Jürgen Repp</span>, <span><a href>Johannes Späth</a></span>, <span>Jan Steffan</span>, <span>Stefan Triller</span>, <span>Eric Bodden</span>
+</span>(2015).
+<strong>Security Analysis of TrueCrypt</strong>.
+<em>German Federal Office for Information Security (BSI)</em>.</div></div></div></div></section><section id=talks class="relative isolate hbb-section blox-_"><div class=home-section-bg></div><div class="flex flex-col items-center max-w-prose mx-auto gap-3 justify-center px-6 md:px-0"><div class="mb-6 text-3xl font-bold text-gray-900 dark:text-white">Talks & Workshops</div></div><div class="flex flex-col items-center px-6"><div class="mt-16 sm:mt-20 container max-w-3xl w-full"><div class="flex flex-col space-y-3"><div class="pub-list-item view-citation" style=margin-bottom:1rem><i class="far fa-file-alt pub-icon" aria-hidden=true></i>
+<span class="article-metadata li-cite-author"><span><a href>Johannes Späth</a></span>
+</span>(2024).
+<strong>Verifying Smart Contract Properties with Certora’s Sunbeam Tool</strong>.
+<em>Meridian 2024</em>.<div class="flex flex-wrap space-x-3"><a class="hb-attachment-link hb-attachment-link-small" href="https://www.youtube.com/watch?v=uoq5SmVKUE8" target=_blank rel=noopener><svg style="height:1em" class="inline-block" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m15.75 10.5 4.72-4.72a.75.75.0 011.28.53v11.38a.75.75.0 01-1.28.53l-4.72-4.72M4.5 18.75h9a2.25 2.25.0 002.25-2.25v-9A2.25 2.25.0 0013.5 5.25h-9A2.25 2.25.0 002.25 7.5v9a2.25 2.25.0 002.25 2.25"/></svg>
+Video</a></div></div><div class="pub-list-item view-citation" style=margin-bottom:1rem><i class="far fa-file-alt pub-icon" aria-hidden=true></i>
+<span class="article-metadata li-cite-author"><span><a href>Johannes Späth</a></span>
+</span>(2023).
+<strong>Verifying ERC4626 Implementations with the Certora Prover</strong>.
+<em>TrustX 2023</em>.</div><div class="pub-list-item view-citation" style=margin-bottom:1rem><i class="far fa-file-alt pub-icon" aria-hidden=true></i>
+<span class="article-metadata li-cite-author"><span><a href>Johannes Späth</a></span>
+</span>(2019).
+<strong>Context-, Flow- and Field-Sensitive Data-Flow Analysis using Synchronized Pushdown Systems</strong>.
+<em>POPL 2019</em>.<div class="flex flex-wrap space-x-3"><a class="hb-attachment-link hb-attachment-link-small" href="https://www.youtube.com/watch?v=SJtfBfu1MDw" target=_blank rel=noopener><svg style="height:1em" class="inline-block" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m15.75 10.5 4.72-4.72a.75.75.0 011.28.53v11.38a.75.75.0 01-1.28.53l-4.72-4.72M4.5 18.75h9a2.25 2.25.0 002.25-2.25v-9A2.25 2.25.0 0013.5 5.25h-9A2.25 2.25.0 002.25 7.5v9a2.25 2.25.0 002.25 2.25"/></svg>
+Video</a></div></div><div class="pub-list-item view-citation" style=margin-bottom:1rem><i class="far fa-file-alt pub-icon" aria-hidden=true></i>
+<span class="article-metadata li-cite-author"><span>Stefan Krüger</span>, <span><a href>Johannes Späth</a></span>
+</span>(2018).
+<strong>You forgot to changeit — CogniCrypt knows it!</strong>.
+<em>EclipseCon France 2018</em>.<div class="flex flex-wrap space-x-3"><a class="hb-attachment-link hb-attachment-link-small" href="https://www.youtube.com/watch?v=Ce3GJYHGjpQ" target=_blank rel=noopener><svg style="height:1em" class="inline-block" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m15.75 10.5 4.72-4.72a.75.75.0 011.28.53v11.38a.75.75.0 01-1.28.53l-4.72-4.72M4.5 18.75h9a2.25 2.25.0 002.25-2.25v-9A2.25 2.25.0 0013.5 5.25h-9A2.25 2.25.0 002.25 7.5v9a2.25 2.25.0 002.25 2.25"/></svg>
+Video</a></div></div><div class="pub-list-item view-citation" style=margin-bottom:1rem><i class="far fa-file-alt pub-icon" aria-hidden=true></i>
+<span class="article-metadata li-cite-author"><span><a href>Johannes Späth</a></span>
+</span>(2017).
+<strong>IDEal: Efficient and Precise Alias-aware Data-Flow Analysis</strong>.
+<em>OOPSLA 2017</em>.<div class="flex flex-wrap space-x-3"><a class="hb-attachment-link hb-attachment-link-small" href="https://www.youtube.com/watch?v=0gGlXgnoX18" target=_blank rel=noopener><svg style="height:1em" class="inline-block" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m15.75 10.5 4.72-4.72a.75.75.0 011.28.53v11.38a.75.75.0 01-1.28.53l-4.72-4.72M4.5 18.75h9a2.25 2.25.0 002.25-2.25v-9A2.25 2.25.0 0013.5 5.25h-9A2.25 2.25.0 002.25 7.5v9a2.25 2.25.0 002.25 2.25"/></svg>
+Video</a></div></div><div class="pub-list-item view-citation" style=margin-bottom:1rem><i class="far fa-file-alt pub-icon" aria-hidden=true></i>
+<span class="article-metadata li-cite-author"><span><a href>Johannes Späth</a></span>
+</span>(2016).
+<strong>Boomerang: Demand-Driven Flow- and Context-Sensitive Pointer Analysis for Java</strong>.
+<em>ECOOP 2016</em>.<div class="flex flex-wrap space-x-3"><a class="hb-attachment-link hb-attachment-link-small" href="https://www.youtube.com/watch?v=aTt4M2_TGPI" target=_blank rel=noopener><svg style="height:1em" class="inline-block" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m15.75 10.5 4.72-4.72a.75.75.0 011.28.53v11.38a.75.75.0 01-1.28.53l-4.72-4.72M4.5 18.75h9a2.25 2.25.0 002.25-2.25v-9A2.25 2.25.0 0013.5 5.25h-9A2.25 2.25.0 002.25 7.5v9a2.25 2.25.0 002.25 2.25"/></svg>
+Video</a></div></div></div></div></div></section></div><div class=page-footer><footer class="container mx-auto flex flex-col justify-items-center text-sm leading-6 mt-24 mb-4 text-slate-700 dark:text-slate-200"><p class="powered-by footer-license-icons text-center pb-2"><a class="inline-flex items-center justify-center gap-2 align-middle" href=https://creativecommons.org/licenses/by-nc-nd/4.0 rel="noopener noreferrer" target=_blank aria-label="Creative Commons"><a class="inline-flex items-center justify-center gap-2 align-middle" href=https://creativecommons.org/licenses/by-nc-nd/4.0 rel="noopener noreferrer" target=_blank aria-label="Creative Commons"><svg class="h-6 w-6 inline-block align-middle text-current" viewBox="0 0 512 512" fill="currentColor" aria-hidden="true" focusable="false"><path d="M253.8 214.9l-33.2 17.3c-9.4-19.6-25.2-19.9-27.5-19.9-22.1.0-33.2 14.6-33.2 43.8.0 23.6 9.2 43.8 33.2 43.8 14.5.0 24.6-7.1 30.6-21.3l30.6 15.5c-6.2 11.5-25.7 39-65.1 39-22.6.0-74-10.3-74-77 0-58.7 43-77.1 72.6-77.1 30.7.0 52.7 11.9 66 35.9zm143 0-32.8 17.3c-9.5-19.8-25.7-19.9-27.9-19.9-22.1.0-33.2 14.6-33.2 43.8.0 23.5 9.2 43.8 33.2 43.8 14.4.0 24.6-7.1 30.5-21.3l31 15.5c-2.1 3.8-21.4 39-65.1 39-22.7.0-74-9.9-74-77 0-58.7 43-77.1 72.6-77.1 30.7.0 52.6 11.9 65.6 35.9zM255.6 8C112.7 8 8 123.1 8 256.1c0 138.4 113.6 248 247.6 248 129.9.0 248.4-100.9 248.4-248C504 118.2 397.4 8 255.6 8zm.9 450.8c-112.5.0-203.7-93-203.7-202.8.0-105.4 85.4-203.3 203.7-203.3 112.5.0 202.8 89.5 202.8 203.3.0 121.7-99.7 202.8-202.8 202.8z"/></svg>
+<svg class="h-6 w-6 inline-block align-middle text-current" viewBox="0 0 512 512" fill="currentColor" aria-hidden="true" focusable="false"><path d="M322.9 194.4v101.4h-28.3v120.5h-77.1V295.9h-28.3V194.4c0-4.4 1.6-8.2 4.6-11.3 3.1-3.1 6.9-4.7 11.3-4.7H307c4.1.0 7.8 1.6 11.1 4.7 3.1 3.2 4.8 6.9 4.8 11.3zm-32.5-64.5a34.5 34.5.0 11-69 .8 34.5 34.5.0 1169-.8zM255.6 8C397.4 8 504 118.1 504 256c0 147.1-118.5 248-248.4 248C121.6 504 8 394.5 8 256 8 123.1 112.7 8 255.6 8zm.8 44.7C138.2 52.7 52.7 150.6 52.7 256c0 109.8 91.2 202.8 203.7 202.8 103.2.0 202.8-81.1 202.8-202.8.1-113.8-90.2-203.3-202.8-203.3z"/></svg>
+<svg class="h-6 w-6 inline-block align-middle text-current" viewBox="0 0 512 512" fill="currentColor" aria-hidden="true" focusable="false"><path d="M255.6 8C395.4 8 504 115.9 504 256c0 147.2-118.5 248-248.4 248C121.1 504 8 393.2 8 256 8 123.1 112.7 8 255.6 8zM63.8 189.1c-7.4 20.4-11.1 42.7-11.1 66.9.0 110.9 92.1 202.4 203.7 202.4 122.4.0 177.2-101.8 178.5-104.1l-93.4-41.6c-7.7 37.1-41.2 53-68.2 55.4v38.1h-28.8V368c-27.5-.3-52.6-10.2-75.3-29.7l34.1-34.5c31.7 29.4 86.4 31.8 86.4-2.2.0-6.2-2.2-11.2-6.6-15.1-14.2-6-1.8-.1-219.3-97.4zM256.4 52.3C218 52.3 144 61 85.9 145.3l94.8 42.5c10-31.3 40.4-42.9 63.8-44.3v-38.1h28.8v38.1c22.7 1.2 43.4 8.9 62 23L303 199.7c-42.7-29.9-83.5-8-70 11.1 53.4 24.1 43.8 19.8 93 41.6l127.1 56.7c4.1-17.4 6.2-35.1 6.2-53.1.0-57-19.8-105-59.3-143.9-39.3-39.9-87.2-59.8-143.6-59.8z"/></svg>
+<svg class="h-6 w-6 inline-block align-middle text-current" viewBox="0 0 512 512" fill="currentColor" aria-hidden="true" focusable="false"><path d="M255.6 8C397.4 8 504 118.1 504 256c0 147.1-118.5 248-248.4 248C121.6 504 8 394.5 8 256 8 123.1 112.7 8 255.6 8zm.8 44.7C138.2 52.7 52.7 150.6 52.7 256c0 109.8 91.2 202.8 203.7 202.8 103.2.0 202.8-81.1 202.8-202.8.1-113.8-90.2-203.3-202.8-203.3zm94 144.3v42.5H170.1V197h180.3zm0 79.8v42.5H170.1v-42.5h180.3z"/></svg></a></p><p class="powered-by text-center">© 2026 Johannes Späth. This work is licensed under <a href=https://creativecommons.org/licenses/by-nc-nd/4.0 rel="noopener noreferrer" target=_blank>CC BY NC ND 4.0</a></p><p class="powered-by text-center text-sm opacity-80 py-1">Made with <a class="underline hover:opacity-100" href="https://hugoblox.com/templates/academic-cv?utm_source=site_footer&utm_medium=referral&utm_campaign=poweredby_oss&utm_content=brand_academic-cv&start=1" target=_blank rel=noopener data-hbx=poweredby_brand>Hugo Blox</a>.
+<a class="inline-flex items-center rounded px-2 py-0.5 border border-current ms-2 text-xs hover:opacity-100" href="https://hugo.chat?utm_source=site_footer&amp;utm_medium=referral&amp;utm_campaign=poweredby_oss&amp;utm_content=cta_academic-cv&amp;template_id=academic-cv" target=_blank rel=noopener data-hbx=poweredby_cta>Duplicate this template →</a></p></footer></div><div id=hb-notification-container class="fixed top-20 right-4 z-[9999] pointer-events-none" aria-live=polite aria-atomic=true></div></body></html>
